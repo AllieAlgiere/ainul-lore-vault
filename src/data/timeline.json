@@ -244,6 +244,29 @@
     "id": "tl-026",
     "era": "Origin",
     "year": "Unknown",
+    "title": "The Whole One",
+    "description": "Before anything else, Ainul exists as the complete and original being. Every emotion, concept, instinct, memory and aspect is part of him.",
+    "characters": [
+      "Ainul"
+    ],
+    "category": "Ainul"
+  },
+  {
+    "id": "tl-027",
+    "era": "Origin",
+    "year": "Unknown",
+    "title": "The Beast Within",
+    "description": "Deep inside the Whole One rests The Beast: not a separate being, but Ainul with every restraint removed. His oldest and most primal nature.",
+    "characters": [
+      "Ainul",
+      "The Beast"
+    ],
+    "category": "Beast"
+  },
+  {
+    "id": "tl-028",
+    "era": "Origin",
+    "year": "Unknown",
     "title": "The Fragmentation",
     "description": "Ainul becomes divided into the Fragments.",
     "characters": [
@@ -252,7 +275,100 @@
     "category": "Ainul"
   },
   {
-    "id": "tl-027",
+    "id": "tl-029",
+    "era": "Origin",
+    "year": "Unknown",
+    "title": "Twelve Aspects Awaken",
+    "description": "The twelve Fragments take shape, each carrying one core aspect: White, Black, Red, Blue, Green, Yellow, Cyan, Magenta, Umbra, Taffy, Lavender and Cider. No more and no less.",
+    "characters": [
+      "White",
+      "Black",
+      "Red",
+      "Blue",
+      "Green",
+      "Yellow",
+      "Cyan",
+      "Magenta",
+      "Umbra",
+      "Taffy",
+      "Lavender",
+      "Cider"
+    ],
+    "category": "Fragment Lore"
+  },
+  {
+    "id": "tl-030",
+    "era": "Origin",
+    "year": "Unknown",
+    "title": "Death Removed",
+    "description": "The Fragments inherit Ainul's removed concept of death. They can be hurt, but never erased by one another.",
+    "characters": [
+      "Ainul"
+    ],
+    "category": "Fragment Lore"
+  },
+  {
+    "id": "tl-031",
+    "era": "Origin",
+    "year": "Unknown",
+    "title": "Echoes of The Beast",
+    "description": "Each Fragment carries a small reflection of The Beast, the source of the ferocity seen in their Overclock states.",
+    "characters": [
+      "The Beast"
+    ],
+    "category": "Beast"
+  },
+  {
+    "id": "tl-032",
+    "era": "Origin",
+    "year": "Unknown",
+    "title": "White Takes Watch Over Black",
+    "description": "White recognises Black as a danger to the world if left unchecked. Without any hatred, he becomes Black's keeper, holding the monster at bay while giving him as much freedom as he safely can.",
+    "characters": [
+      "White",
+      "Black"
+    ],
+    "category": "Fragment Lore"
+  },
+  {
+    "id": "tl-033",
+    "era": "Origin",
+    "year": "Unknown",
+    "title": "The Fragment Family Forms",
+    "description": "The Fragments come to see themselves as one family. Hurt one Fragment unjustly and you hurt all of them. Disputes are settled by sparring, since they cannot kill each other.",
+    "characters": [
+      "Taffy",
+      "Black",
+      "White"
+    ],
+    "category": "Fragment Lore"
+  },
+  {
+    "id": "tl-034",
+    "era": "Origin",
+    "year": "Unknown",
+    "title": "The Order of Power Settles",
+    "description": "Black and White stand as the two strongest Fragments, followed by Taffy, Umbra and Cider.",
+    "characters": [
+      "Black",
+      "White",
+      "Taffy",
+      "Umbra",
+      "Cider"
+    ],
+    "category": "Fragment Lore"
+  },
+  {
+    "id": "tl-035",
+    "era": "Origin",
+    "year": "Unknown",
+    "title": "The First Fusions",
+    "description": "Fragments learn they can fuse into new beings. Fusions keep their memories and bonds after splitting, and the order of fusion never changes the result.",
+    "characters": [],
+    "category": "Fusion Lore"
+  },
+  {
+    "id": "tl-036",
     "era": "Origin",
     "year": "Unknown",
     "title": "Formation of Grey",
@@ -265,12 +381,67 @@
     "category": "Fusion Lore"
   },
   {
-    "id": "tl-028",
+    "id": "tl-037",
+    "era": "Origin",
+    "year": "Unknown",
+    "title": "Lesser Fusions Emerge",
+    "description": "Smaller fusions appear: Indigo, Orchid, Thistle, Mauve, Aegus, Tempest, King and Ral.",
+    "characters": [
+      "Indigo",
+      "Orchid",
+      "Thistle",
+      "Mauve",
+      "Aegus",
+      "Tempest",
+      "King",
+      "Ral"
+    ],
+    "category": "Fusion Lore"
+  },
+  {
+    "id": "tl-038",
     "era": "Origin",
     "year": "Unknown",
     "title": "Rise of the Seven Thrones",
     "description": "The great throne fusions emerge.",
     "characters": [],
     "category": "Thrones"
+  },
+  {
+    "id": "tl-039",
+    "era": "Origin",
+    "year": "Unknown",
+    "title": "The Great Throne Fusions",
+    "description": "Larger fusions rise to claim thrones, among them Vermilion, Eventide, Phlox and Acid.",
+    "characters": [
+      "Vermilion",
+      "Eventide",
+      "Phlox",
+      "Acid"
+    ],
+    "category": "Thrones"
+  },
+  {
+    "id": "tl-040",
+    "era": "Origin",
+    "year": "Unknown",
+    "title": "Reunion",
+    "description": "When all twelve Fragments unite, the result is always Ainul as he was meant to be. A missing Fragment gives an incomplete result.",
+    "characters": [
+      "Ainul"
+    ],
+    "category": "Ainul"
+  },
+  {
+    "id": "tl-041",
+    "era": "Origin",
+    "year": "Unknown",
+    "title": "The Beast Unleashed",
+    "description": "Ainul can take the form of The Beast, his own Overclock state. It has almost never been witnessed.",
+    "characters": [
+      "Ainul",
+      "The Beast"
+    ],
+    "category": "Beast"
   }
 ]
