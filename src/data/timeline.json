@@ -239,5 +239,38 @@
     "description": "Fusions are capable of fusing with other Fragments and Fusions. The final result remains identical regardless of fusion order.",
     "characters": [],
     "category": "Fusion Lore"
+  },
+  {
+    "id": "tl-026",
+    "era": "Origin",
+    "year": "Unknown",
+    "title": "The Fragmentation",
+    "description": "Ainul becomes divided into the Fragments.",
+    "characters": [
+      "Ainul"
+    ],
+    "category": "Ainul"
+  },
+  {
+    "id": "tl-027",
+    "era": "Origin",
+    "year": "Unknown",
+    "title": "Formation of Grey",
+    "description": "Black and White fuse to create Grey.",
+    "characters": [
+      "Grey",
+      "White",
+      "Black"
+    ],
+    "category": "Fusion Lore"
+  },
+  {
+    "id": "tl-028",
+    "era": "Origin",
+    "year": "Unknown",
+    "title": "Rise of the Seven Thrones",
+    "description": "The great throne fusions emerge.",
+    "characters": [],
+    "category": "Thrones"
   }
 ]
