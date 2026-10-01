@@ -10,7 +10,16 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AinulRouteImport } from './routes/ainul'
+import { Route as AmaRouteImport } from './routes/ama'
+import { Route as BeastRouteImport } from './routes/beast'
 import { Route as CharactersRouteImport } from './routes/characters'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as FragmentsRouteImport } from './routes/fragments'
+import { Route as FusionsRouteImport } from './routes/fusions'
+import { Route as PowerscalingRouteImport } from './routes/powerscaling'
+import { Route as ThronesRouteImport } from './routes/thrones'
+import { Route as TimelineRouteImport } from './routes/timeline'
 import { Route as CharactersIdRouteImport } from './routes/characters.$id'
 
 const IndexRoute = IndexRouteImport.update({
@@ -18,9 +27,54 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AinulRoute = AinulRouteImport.update({
+  id: '/ainul',
+  path: '/ainul',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AmaRoute = AmaRouteImport.update({
+  id: '/ama',
+  path: '/ama',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BeastRoute = BeastRouteImport.update({
+  id: '/beast',
+  path: '/beast',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CharactersRoute = CharactersRouteImport.update({
   id: '/characters',
   path: '/characters',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FragmentsRoute = FragmentsRouteImport.update({
+  id: '/fragments',
+  path: '/fragments',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FusionsRoute = FusionsRouteImport.update({
+  id: '/fusions',
+  path: '/fusions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PowerscalingRoute = PowerscalingRouteImport.update({
+  id: '/powerscaling',
+  path: '/powerscaling',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ThronesRoute = ThronesRouteImport.update({
+  id: '/thrones',
+  path: '/thrones',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TimelineRoute = TimelineRouteImport.update({
+  id: '/timeline',
+  path: '/timeline',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CharactersIdRoute = CharactersIdRouteImport.update({
@@ -31,31 +85,104 @@ const CharactersIdRoute = CharactersIdRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/ainul': typeof AinulRoute
+  '/ama': typeof AmaRoute
+  '/beast': typeof BeastRoute
   '/characters': typeof CharactersRouteWithChildren
+  '/faq': typeof FaqRoute
+  '/fragments': typeof FragmentsRoute
+  '/fusions': typeof FusionsRoute
+  '/powerscaling': typeof PowerscalingRoute
+  '/thrones': typeof ThronesRoute
+  '/timeline': typeof TimelineRoute
   '/characters/$id': typeof CharactersIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/ainul': typeof AinulRoute
+  '/ama': typeof AmaRoute
+  '/beast': typeof BeastRoute
   '/characters': typeof CharactersRouteWithChildren
+  '/faq': typeof FaqRoute
+  '/fragments': typeof FragmentsRoute
+  '/fusions': typeof FusionsRoute
+  '/powerscaling': typeof PowerscalingRoute
+  '/thrones': typeof ThronesRoute
+  '/timeline': typeof TimelineRoute
   '/characters/$id': typeof CharactersIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/ainul': typeof AinulRoute
+  '/ama': typeof AmaRoute
+  '/beast': typeof BeastRoute
   '/characters': typeof CharactersRouteWithChildren
+  '/faq': typeof FaqRoute
+  '/fragments': typeof FragmentsRoute
+  '/fusions': typeof FusionsRoute
+  '/powerscaling': typeof PowerscalingRoute
+  '/thrones': typeof ThronesRoute
+  '/timeline': typeof TimelineRoute
   '/characters/$id': typeof CharactersIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/characters' | '/characters/$id'
+  fullPaths:
+    | '/'
+    | '/ainul'
+    | '/ama'
+    | '/beast'
+    | '/characters'
+    | '/faq'
+    | '/fragments'
+    | '/fusions'
+    | '/powerscaling'
+    | '/thrones'
+    | '/timeline'
+    | '/characters/$id'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/characters' | '/characters/$id'
-  id: '__root__' | '/' | '/characters' | '/characters/$id'
+  to:
+    | '/'
+    | '/ainul'
+    | '/ama'
+    | '/beast'
+    | '/characters'
+    | '/faq'
+    | '/fragments'
+    | '/fusions'
+    | '/powerscaling'
+    | '/thrones'
+    | '/timeline'
+    | '/characters/$id'
+  id:
+    | '__root__'
+    | '/'
+    | '/ainul'
+    | '/ama'
+    | '/beast'
+    | '/characters'
+    | '/faq'
+    | '/fragments'
+    | '/fusions'
+    | '/powerscaling'
+    | '/thrones'
+    | '/timeline'
+    | '/characters/$id'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AinulRoute: typeof AinulRoute
+  AmaRoute: typeof AmaRoute
+  BeastRoute: typeof BeastRoute
   CharactersRoute: typeof CharactersRouteWithChildren
+  FaqRoute: typeof FaqRoute
+  FragmentsRoute: typeof FragmentsRoute
+  FusionsRoute: typeof FusionsRoute
+  PowerscalingRoute: typeof PowerscalingRoute
+  ThronesRoute: typeof ThronesRoute
+  TimelineRoute: typeof TimelineRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -67,11 +194,74 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ainul': {
+      id: '/ainul'
+      path: '/ainul'
+      fullPath: '/ainul'
+      preLoaderRoute: typeof AinulRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ama': {
+      id: '/ama'
+      path: '/ama'
+      fullPath: '/ama'
+      preLoaderRoute: typeof AmaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/beast': {
+      id: '/beast'
+      path: '/beast'
+      fullPath: '/beast'
+      preLoaderRoute: typeof BeastRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/characters': {
       id: '/characters'
       path: '/characters'
       fullPath: '/characters'
       preLoaderRoute: typeof CharactersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fragments': {
+      id: '/fragments'
+      path: '/fragments'
+      fullPath: '/fragments'
+      preLoaderRoute: typeof FragmentsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fusions': {
+      id: '/fusions'
+      path: '/fusions'
+      fullPath: '/fusions'
+      preLoaderRoute: typeof FusionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/powerscaling': {
+      id: '/powerscaling'
+      path: '/powerscaling'
+      fullPath: '/powerscaling'
+      preLoaderRoute: typeof PowerscalingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/thrones': {
+      id: '/thrones'
+      path: '/thrones'
+      fullPath: '/thrones'
+      preLoaderRoute: typeof ThronesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/timeline': {
+      id: '/timeline'
+      path: '/timeline'
+      fullPath: '/timeline'
+      preLoaderRoute: typeof TimelineRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/characters/$id': {
@@ -98,7 +288,16 @@ const CharactersRouteWithChildren = CharactersRoute._addFileChildren(
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AinulRoute: AinulRoute,
+  AmaRoute: AmaRoute,
+  BeastRoute: BeastRoute,
   CharactersRoute: CharactersRouteWithChildren,
+  FaqRoute: FaqRoute,
+  FragmentsRoute: FragmentsRoute,
+  FusionsRoute: FusionsRoute,
+  PowerscalingRoute: PowerscalingRoute,
+  ThronesRoute: ThronesRoute,
+  TimelineRoute: TimelineRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
