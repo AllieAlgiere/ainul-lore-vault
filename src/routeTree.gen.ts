@@ -20,6 +20,7 @@ import { Route as FusionsRouteImport } from './routes/fusions'
 import { Route as PowerscalingRouteImport } from './routes/powerscaling'
 import { Route as ThronesRouteImport } from './routes/thrones'
 import { Route as TimelineRouteImport } from './routes/timeline'
+import { Route as CharactersIndexRouteImport } from './routes/characters.index'
 import { Route as CharactersIdRouteImport } from './routes/characters.$id'
 
 const IndexRoute = IndexRouteImport.update({
@@ -77,6 +78,11 @@ const TimelineRoute = TimelineRouteImport.update({
   path: '/timeline',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CharactersIndexRoute = CharactersIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => CharactersRoute,
+} as any)
 const CharactersIdRoute = CharactersIdRouteImport.update({
   id: '/$id',
   path: '/$id',
@@ -96,13 +102,13 @@ export interface FileRoutesByFullPath {
   '/thrones': typeof ThronesRoute
   '/timeline': typeof TimelineRoute
   '/characters/$id': typeof CharactersIdRoute
+  '/characters/': typeof CharactersIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/ainul': typeof AinulRoute
   '/ama': typeof AmaRoute
   '/beast': typeof BeastRoute
-  '/characters': typeof CharactersRouteWithChildren
   '/faq': typeof FaqRoute
   '/fragments': typeof FragmentsRoute
   '/fusions': typeof FusionsRoute
@@ -110,6 +116,7 @@ export interface FileRoutesByTo {
   '/thrones': typeof ThronesRoute
   '/timeline': typeof TimelineRoute
   '/characters/$id': typeof CharactersIdRoute
+  '/characters': typeof CharactersIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -125,6 +132,7 @@ export interface FileRoutesById {
   '/thrones': typeof ThronesRoute
   '/timeline': typeof TimelineRoute
   '/characters/$id': typeof CharactersIdRoute
+  '/characters/': typeof CharactersIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -141,13 +149,13 @@ export interface FileRouteTypes {
     | '/thrones'
     | '/timeline'
     | '/characters/$id'
+    | '/characters/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/ainul'
     | '/ama'
     | '/beast'
-    | '/characters'
     | '/faq'
     | '/fragments'
     | '/fusions'
@@ -155,6 +163,7 @@ export interface FileRouteTypes {
     | '/thrones'
     | '/timeline'
     | '/characters/$id'
+    | '/characters'
   id:
     | '__root__'
     | '/'
@@ -169,6 +178,7 @@ export interface FileRouteTypes {
     | '/thrones'
     | '/timeline'
     | '/characters/$id'
+    | '/characters/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -264,6 +274,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TimelineRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/characters/': {
+      id: '/characters/'
+      path: '/'
+      fullPath: '/characters/'
+      preLoaderRoute: typeof CharactersIndexRouteImport
+      parentRoute: typeof CharactersRoute
+    }
     '/characters/$id': {
       id: '/characters/$id'
       path: '/$id'
@@ -276,10 +293,12 @@ declare module '@tanstack/react-router' {
 
 interface CharactersRouteChildren {
   CharactersIdRoute: typeof CharactersIdRoute
+  CharactersIndexRoute: typeof CharactersIndexRoute
 }
 
 const CharactersRouteChildren: CharactersRouteChildren = {
   CharactersIdRoute: CharactersIdRoute,
+  CharactersIndexRoute: CharactersIndexRoute,
 }
 
 const CharactersRouteWithChildren = CharactersRoute._addFileChildren(
