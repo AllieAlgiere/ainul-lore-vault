@@ -1,38 +1,6 @@
 [
   {
-    "id": "faq-fragment",
-    "question": "What is a Fragment?",
-    "answer": "A sovereign incarnation of one principle released during the Sundering. Fragments are persons, powers, and laws of nature at once.",
-    "characters": [
-      "White",
-      "Black",
-      "Red"
-    ],
-    "date": ""
-  },
-  {
-    "id": "faq-fusion",
-    "question": "How are Fusions created?",
-    "answer": "A Fusion appears when two or more Fragments sustain a shared contradiction without destroying one another.",
-    "characters": [
-      "Grey"
-    ],
-    "date": ""
-  },
-  {
-    "id": "faq-thrones",
-    "question": "Do the Seven Thrones grant power?",
-    "answer": "No. A throne recognizes power already present and binds it to a domain, turning capability into cosmic obligation.",
-    "characters": [
-      "White",
-      "Black",
-      "Red",
-      "Grey"
-    ],
-    "date": ""
-  },
-  {
-    "id": "faq-how-does-white-feel-about-black",
+    "id": "faq-01",
     "question": "How does White feel about Black?",
     "answer": "White realizes Black is dangerous if left unchecked, but he does not hate him. He sympathizes with Black's struggles and wants to keep his destructive side under control while allowing him as much freedom as possible.",
     "date": "2023-10-28",
@@ -42,14 +10,14 @@
     ]
   },
   {
-    "id": "faq-can-fragments-die",
+    "id": "faq-02",
     "question": "Can Fragments die?",
     "answer": "Fragments normally cannot die. Death is effectively removed from their existence. However, sufficiently powerful reality-warping forces may permanently destroy a Fragment.",
     "date": "2024-01-11",
     "characters": []
   },
   {
-    "id": "faq-what-is-black-s-favorite-food",
+    "id": "faq-03",
     "question": "What is Black's favorite food?",
     "answer": "Honey-glazed roast ham.",
     "date": "2023-11-14",
@@ -58,7 +26,7 @@
     ]
   },
   {
-    "id": "faq-what-is-white-s-favorite-food",
+    "id": "faq-04",
     "question": "What is White's favorite food?",
     "answer": "Tacos.",
     "date": "2023-11-14",
@@ -67,12 +35,10 @@
     ]
   },
   {
-    "id": "faq-can-fusions-fuse-with-other-fragments",
+    "id": "faq-05",
     "question": "Can Fusions fuse with other Fragments?",
     "answer": "Yes. Fusions can fuse with other Fragments or other Fusions. The result is always the same final combination regardless of fusion order.",
     "date": "2024-05-28",
-    "characters": [
-      "Grey"
-    ]
+    "characters": []
   }
 ]

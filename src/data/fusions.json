@@ -1,39 +1,382 @@
 [
   {
+    "id": "mauve",
+    "name": "Mauve",
+    "title": "Fusion of Blue, Taffy and Umbra",
+    "kind": "Fusion",
+    "aspect": "Combined aspects of Curiosity, Instinct and Ambition",
+    "description": "Fusion of Blue, Taffy and Umbra. Combined aspects of Curiosity, Instinct and Ambition.",
+    "abilities": [],
+    "combatAttributes": "",
+    "disposition": "",
+    "favoriteFood": "",
+    "quotes": [],
+    "relationships": [
+      "Blue",
+      "Taffy",
+      "Umbra"
+    ],
+    "image": "mauve",
+    "tags": [
+      "fusion"
+    ],
+    "fusionOf": [
+      "Blue",
+      "Taffy",
+      "Umbra"
+    ]
+  },
+  {
+    "id": "aegus",
+    "name": "Aegus",
+    "title": "Fusion of Green, Umbra and Cyan",
+    "kind": "Fusion",
+    "aspect": "Combined aspects of Harmony, Ambition and Discovery",
+    "description": "Fusion of Green, Umbra and Cyan. Combined aspects of Harmony, Ambition and Discovery.",
+    "abilities": [],
+    "combatAttributes": "",
+    "disposition": "",
+    "favoriteFood": "",
+    "quotes": [],
+    "relationships": [
+      "Green",
+      "Umbra",
+      "Cyan"
+    ],
+    "image": "aegus",
+    "tags": [
+      "fusion"
+    ],
+    "fusionOf": [
+      "Green",
+      "Umbra",
+      "Cyan"
+    ]
+  },
+  {
+    "id": "orchid",
+    "name": "Orchid",
+    "title": "Fusion of Magenta and Lavender",
+    "kind": "Fusion",
+    "aspect": "Combined aspects of Pride and Expression",
+    "description": "Fusion of Magenta and Lavender. Combined aspects of Pride and Expression.",
+    "abilities": [],
+    "combatAttributes": "",
+    "disposition": "",
+    "favoriteFood": "",
+    "quotes": [],
+    "relationships": [
+      "Magenta",
+      "Lavender"
+    ],
+    "image": "orchid",
+    "tags": [
+      "fusion"
+    ],
+    "fusionOf": [
+      "Magenta",
+      "Lavender"
+    ]
+  },
+  {
+    "id": "vermilion",
+    "name": "Vermilion",
+    "title": "One of the Seven Thrones",
+    "kind": "Fusion",
+    "aspect": "",
+    "description": "One of the Seven Thrones. .",
+    "abilities": [],
+    "combatAttributes": "",
+    "disposition": "",
+    "favoriteFood": "",
+    "quotes": [],
+    "relationships": [
+      "Red",
+      "Magenta",
+      "Cider",
+      "Taffy",
+      "Umbra"
+    ],
+    "image": "vermilion",
+    "tags": [
+      "fusion",
+      "seven thrones"
+    ],
+    "fusionOf": [
+      "Red",
+      "Magenta",
+      "Cider",
+      "Taffy",
+      "Umbra"
+    ]
+  },
+  {
+    "id": "thistle",
+    "name": "Thistle",
+    "title": "Fusion of Lavender and Taffy",
+    "kind": "Fusion",
+    "aspect": "Combined aspects of Expression and Instinct",
+    "description": "Fusion of Lavender and Taffy. Combined aspects of Expression and Instinct.",
+    "abilities": [],
+    "combatAttributes": "",
+    "disposition": "",
+    "favoriteFood": "",
+    "quotes": [],
+    "relationships": [
+      "Lavender",
+      "Taffy"
+    ],
+    "image": "thistle",
+    "tags": [
+      "fusion"
+    ],
+    "fusionOf": [
+      "Lavender",
+      "Taffy"
+    ]
+  },
+  {
+    "id": "eventide",
+    "name": "Eventide",
+    "title": "One of the Seven Thrones",
+    "kind": "Fusion",
+    "aspect": "",
+    "description": "One of the Seven Thrones. .",
+    "abilities": [],
+    "combatAttributes": "",
+    "disposition": "",
+    "favoriteFood": "",
+    "quotes": [],
+    "relationships": [
+      "Blue",
+      "Taffy",
+      "Umbra",
+      "Cyan",
+      "Lavender"
+    ],
+    "image": "eventide",
+    "tags": [
+      "fusion",
+      "seven thrones"
+    ],
+    "fusionOf": [
+      "Blue",
+      "Taffy",
+      "Umbra",
+      "Cyan",
+      "Lavender"
+    ]
+  },
+  {
+    "id": "indigo",
+    "name": "Indigo",
+    "title": "Fusion of Blue and Taffy",
+    "kind": "Fusion",
+    "aspect": "Combined aspects of Curiosity and Instinct",
+    "description": "Fusion of Blue and Taffy. Combined aspects of Curiosity and Instinct.",
+    "abilities": [],
+    "combatAttributes": "",
+    "disposition": "",
+    "favoriteFood": "",
+    "quotes": [],
+    "relationships": [
+      "Blue",
+      "Taffy"
+    ],
+    "image": "indigo",
+    "tags": [
+      "fusion"
+    ],
+    "fusionOf": [
+      "Blue",
+      "Taffy"
+    ]
+  },
+  {
+    "id": "phlox",
+    "name": "Phlox",
+    "title": "One of the Seven Thrones",
+    "kind": "Fusion",
+    "aspect": "",
+    "description": "One of the Seven Thrones. .",
+    "abilities": [],
+    "combatAttributes": "",
+    "disposition": "",
+    "favoriteFood": "",
+    "quotes": [],
+    "relationships": [
+      "Magenta",
+      "Cyan",
+      "Blue",
+      "Lavender",
+      "Green",
+      "Yellow",
+      "Red"
+    ],
+    "image": "phlox",
+    "tags": [
+      "fusion",
+      "seven thrones"
+    ],
+    "fusionOf": [
+      "Magenta",
+      "Cyan",
+      "Blue",
+      "Lavender",
+      "Green",
+      "Yellow",
+      "Red"
+    ]
+  },
+  {
+    "id": "tempest",
+    "name": "Tempest",
+    "title": "Fusion of Blue, Green and Yellow",
+    "kind": "Fusion",
+    "aspect": "Combined aspects of Curiosity, Harmony and Optimism",
+    "description": "Fusion of Blue, Green and Yellow. Combined aspects of Curiosity, Harmony and Optimism.",
+    "abilities": [],
+    "combatAttributes": "",
+    "disposition": "",
+    "favoriteFood": "",
+    "quotes": [],
+    "relationships": [
+      "Blue",
+      "Green",
+      "Yellow"
+    ],
+    "image": "tempest",
+    "tags": [
+      "fusion"
+    ],
+    "fusionOf": [
+      "Blue",
+      "Green",
+      "Yellow"
+    ]
+  },
+  {
+    "id": "acid",
+    "name": "Acid",
+    "title": "One of the Seven Thrones",
+    "kind": "Fusion",
+    "aspect": "",
+    "description": "One of the Seven Thrones. .",
+    "abilities": [],
+    "combatAttributes": "",
+    "disposition": "",
+    "favoriteFood": "",
+    "quotes": [],
+    "relationships": [
+      "Taffy",
+      "Yellow",
+      "Cider",
+      "Cyan",
+      "Umbra",
+      "Magenta"
+    ],
+    "image": "acid",
+    "tags": [
+      "fusion",
+      "seven thrones"
+    ],
+    "fusionOf": [
+      "Taffy",
+      "Yellow",
+      "Cider",
+      "Cyan",
+      "Umbra",
+      "Magenta"
+    ]
+  },
+  {
+    "id": "king",
+    "name": "King",
+    "title": "Fusion of Red, Umbra and Cider",
+    "kind": "Fusion",
+    "aspect": "Combined aspects of Passion, Ambition and Emotion",
+    "description": "Fusion of Red, Umbra and Cider. Combined aspects of Passion, Ambition and Emotion.",
+    "abilities": [],
+    "combatAttributes": "",
+    "disposition": "",
+    "favoriteFood": "",
+    "quotes": [],
+    "relationships": [
+      "Red",
+      "Umbra",
+      "Cider"
+    ],
+    "image": "king",
+    "tags": [
+      "fusion"
+    ],
+    "fusionOf": [
+      "Red",
+      "Umbra",
+      "Cider"
+    ]
+  },
+  {
+    "id": "ral",
+    "name": "Ral",
+    "title": "Fusion of Taffy, Red, Blue, Umbra and Cider",
+    "kind": "Fusion",
+    "aspect": "",
+    "description": "Fusion of Taffy, Red, Blue, Umbra and Cider. .",
+    "abilities": [],
+    "combatAttributes": "",
+    "disposition": "",
+    "favoriteFood": "",
+    "quotes": [],
+    "relationships": [
+      "Taffy",
+      "Red",
+      "Blue",
+      "Umbra",
+      "Cider"
+    ],
+    "image": "ral",
+    "tags": [
+      "fusion"
+    ],
+    "fusionOf": [
+      "Taffy",
+      "Red",
+      "Blue",
+      "Umbra",
+      "Cider"
+    ]
+  },
+  {
     "id": "grey",
     "name": "Grey",
-    "title": "Embodied Material Existence",
+    "title": "Embodiment of Material Existence",
     "kind": "Fusion",
-    "aspect": "Physical body, material existence",
-    "description": "Born where White's remembrance met Black's oblivion, Grey keeps the impossible histories. Behind the porcelain mask, two contrary wills speak with one voice.",
+    "aspect": "Physical body and material existence",
+    "description": "Embodiment of Material Existence. Physical body and material existence.",
     "abilities": [
       "Timeline Omniscience",
       "Timeline Overwrite",
       "Recent Time Rewind"
     ],
-    "combatAttributes": {
-      "might": 82,
-      "arcana": 96,
-      "resolve": 99,
-      "celerity": 70
-    },
+    "combatAttributes": "Incomplete manifestation of the Whole One.",
+    "disposition": "Balance between White and Black.",
+    "favoriteFood": "",
+    "quotes": [],
     "relationships": [
+      "Black",
       "White",
-      "Black",
-      "Red"
-    ],
-    "fusionOf": [
-      "Black",
-      "White"
+      "Ainul"
     ],
     "image": "grey",
     "tags": [
       "fusion",
-      "paradox",
-      "archive",
-      "equilibrium"
+      "seven thrones",
+      "timeline"
     ],
-    "combatSummary": "The speed of White combined with the strength of Black...",
-    "disposition": "Stoic, brooding, empty..."
+    "fusionOf": [
+      "Black",
+      "White"
+    ]
   }
 ]

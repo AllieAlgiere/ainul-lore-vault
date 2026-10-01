@@ -1,5 +1,63 @@
 {
-  "title":"The Ainul","subtitle":"Witnesses beyond the veil","description":"The Ainul are not gods, though mortals often kneel before their passing. They are the witnesses who survived the world before language, bound to observe each turning of the Seven Thrones without direct dominion.",
-  "tenets":["Witness, but do not author.","Name only what has ended.","Guard the interval between histories."],
-  "sections":[{"title":"The Choir Beyond","body":"Ainul communicate through shared recollection rather than speech. To hear their choir is to remember lives never lived."},{"title":"The Covenant of Glass","body":"After the Sundering, the Ainul swore never again to hold a throne. Their emissaries may counsel a keeper, but each counsel exacts a memory."}]
+  "title": "Ainul",
+  "subtitle": "You can possibly destroy a Fragment, but never Ainul when whole.",
+  "description": "Ainul is the fully restored Whole One. Every Fragment, Fusion, emotion, concept, instinct, memory and aspect exists as a part of him. Whenever all twelve Fragments unite, the result is always Ainul in his complete form. No alternative outcome exists.",
+  "aspect": "The complete and original being from which all Fragments originate.",
+  "list": [
+    "Fragmental Fusion",
+    "Existence Beyond Death",
+    "Complete Restoration",
+    "Reality Manipulation",
+    "Conceptual Existence",
+    "Universal Scale Power",
+    "Perfect Memory",
+    "Complete Fragment Synchronization"
+  ],
+  "sections": [
+    {
+      "title": "Origin",
+      "body": "The original being before Fragmentation."
+    },
+    {
+      "title": "Fragmentation",
+      "body": "At an unknown point Ainul split into twelve essential Fragments, each embodying a core aspect of his existence."
+    },
+    {
+      "title": "Reformation",
+      "body": "Only the presence of every Fragment allows complete restoration."
+    },
+    {
+      "title": "Death",
+      "body": "According to Ainul himself, he is not immortal. He is literally incapable of dying."
+    },
+    {
+      "title": "Form: Whole One",
+      "body": "The complete and balanced form of Ainul."
+    },
+    {
+      "title": "Form: The Beast",
+      "body": "A hidden unleashed state possessed by Ainul and reflected in certain Fragment overclocks."
+    }
+  ],
+  "related": [
+    "White",
+    "Black",
+    "Red",
+    "Blue",
+    "Green",
+    "Yellow",
+    "Cyan",
+    "Magenta",
+    "Umbra",
+    "Taffy",
+    "Lavender",
+    "Cider"
+  ],
+  "tags": [
+    "Whole One",
+    "Fragment Origin",
+    "Fusion",
+    "The Beast",
+    "Lore Core"
+  ]
 }

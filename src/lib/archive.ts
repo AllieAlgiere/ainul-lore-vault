@@ -6,12 +6,12 @@ import ama from "@/data/ama-archive.json";
 import faq from "@/data/faq.json";
 import powerscaling from "@/data/powerscaling.json";
 
-export type CombatAttributes = Record<"might" | "arcana" | "resolve" | "celerity", number>;
+export type CombatAttributes = string;
 export type Character = {
   id: string; name: string; title: string; kind: "Fragment" | "Fusion"; aspect: string;
   description: string; abilities: string[]; combatAttributes: CombatAttributes;
   relationships: string[]; fusionOf?: string[]; image: string; tags: string[];
-  combatSummary?: string; disposition?: string;
+  disposition?: string; favoriteFood?: string; quotes?: string[];
 };
 export type TimelineEntry = (typeof timeline)[number];
 export type LinkedEntry = (typeof ama)[number] | (typeof faq)[number];
@@ -33,7 +33,7 @@ export const allTags = [...new Set(characters.flatMap((character) => character.t
 export const filterCharacters = (query: string, tag: string) => {
   const needle = query.trim().toLowerCase();
   return characters.filter((character) => {
-    const haystack = [character.name, character.title, character.kind, character.aspect, character.description, ...character.abilities, ...character.tags].join(" ").toLowerCase();
+    const haystack = [character.name, character.title, character.kind, character.aspect, character.description, ...character.abilities, character.combatAttributes, character.disposition ?? "", ...character.tags].join(" ").toLowerCase();
     return (!needle || haystack.includes(needle)) && (!tag || character.tags.includes(tag));
   });
 };

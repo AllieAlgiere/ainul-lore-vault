@@ -1,7 +1,218 @@
 [
-  {"id":"before-counting","era":"Before Counting","year":"—","title":"The First Utterance","description":"The Ainul speak a single name into the unmeasured dark, and creation acquires a boundary.","characters":[]},
-  {"id":"sundering","era":"Age of Fracture","year":"0 AS","title":"The Sundering","description":"The original light divides into sovereign aspects. White and Black awaken on opposite shores of reality.","characters":["White","Black"]},
-  {"id":"red-march","era":"Age of Fracture","year":"312 AS","title":"The Red March","description":"Red crosses the mortal kingdoms and every standing army declares allegiance or turns upon itself.","characters":["Red"]},
-  {"id":"ashen-concord","era":"Age of Concord","year":"701 AS","title":"The Ashen Concord","description":"White and Black enter the same sealed archive. Grey emerges after seven silent days.","characters":["White","Black","Grey"]},
-  {"id":"verdant-fall","era":"Present Cycle","year":"1194 AS","title":"Fall of the Verdant Throne","description":"The Beast consumes the Fifth Keeper's name, leaving a vacancy no prophecy had recorded.","characters":[]}
+  {
+    "id": "tl-001",
+    "era": "Character Lore",
+    "year": "2023-10-28",
+    "title": "White's Relationship with Black Revealed",
+    "description": "White does not hate Black despite recognizing him as a danger. He seeks to balance Black's freedom with the safety of the world.",
+    "characters": [
+      "White",
+      "Black"
+    ]
+  },
+  {
+    "id": "tl-002",
+    "era": "Character Lore",
+    "year": "2023-11-01",
+    "title": "Magenta's Future Discussed",
+    "description": "The possibility of Magenta settling down romantically is addressed, emphasizing his nature as a Fragment.",
+    "characters": []
+  },
+  {
+    "id": "tl-003",
+    "era": "Fragment Lore",
+    "year": "2023-11-14",
+    "title": "Fragment Interaction with Black Explained",
+    "description": "All Fragments can interact with Black, though most approach him cautiously. None hate him despite his destructive potential.",
+    "characters": [
+      "Black",
+      "White"
+    ]
+  },
+  {
+    "id": "tl-004",
+    "era": "Lore",
+    "year": "2023-11-14",
+    "title": "Fragment Immortality Explained",
+    "description": "Fragments cannot normally be permanently killed by one another because death has been removed from their existence.",
+    "characters": []
+  },
+  {
+    "id": "tl-005",
+    "era": "Character Lore",
+    "year": "2023-11-14",
+    "title": "Favorite Foods Revealed",
+    "description": "The favorite foods of numerous Fragments are publicly revealed.",
+    "characters": []
+  },
+  {
+    "id": "tl-006",
+    "era": "Fusion Lore",
+    "year": "2023-11-14",
+    "title": "Fusion Concept Introduced",
+    "description": "The existence of Fragment fusion is officially explained. Multiple Fragments can merge into entirely new beings.",
+    "characters": [
+      "Grey"
+    ]
+  },
+  {
+    "id": "tl-007",
+    "era": "Fusion Lore",
+    "year": "2023-11-14",
+    "title": "Grey Revealed",
+    "description": "White and Black are confirmed capable of fusing into Grey, an incomplete physical manifestation of the Whole One.",
+    "characters": [
+      "Grey",
+      "White",
+      "Black"
+    ]
+  },
+  {
+    "id": "tl-008",
+    "era": "Core Lore",
+    "year": "2023-11-17",
+    "title": "Fragment Population Confirmed",
+    "description": "The total number of Fragments is confirmed to be exactly twelve.",
+    "characters": []
+  },
+  {
+    "id": "tl-009",
+    "era": "Core Lore",
+    "year": "2023-11-17",
+    "title": "Ainul Explained",
+    "description": "All Fragments fusing together always results in Ainul, the complete Whole One.",
+    "characters": [
+      "Ainul"
+    ]
+  },
+  {
+    "id": "tl-010",
+    "era": "Major Revelation",
+    "year": "2023-11-17",
+    "title": "The Beast First Mentioned",
+    "description": "A mysterious form known as The Beast is revealed to exist beyond ordinary Fragment states.",
+    "characters": [
+      "The Beast"
+    ]
+  },
+  {
+    "id": "tl-011",
+    "era": "Character Lore",
+    "year": "2023-12-23",
+    "title": "Magenta's Dancing Talent Revealed",
+    "description": "Magenta is revealed to be one of the most skilled dancers among the Fragments.",
+    "characters": []
+  },
+  {
+    "id": "tl-012",
+    "era": "Character Lore",
+    "year": "2023-12-23",
+    "title": "Lavender's Gaming Ability Revealed",
+    "description": "Lavender is shown to outperform Yellow in competitive gaming.",
+    "characters": []
+  },
+  {
+    "id": "tl-013",
+    "era": "Power Scaling",
+    "year": "2023-12-29",
+    "title": "Official Top Five Power Ranking",
+    "description": "Black, White, Taffy, Umbra and Cider are revealed as the five strongest Fragments.",
+    "characters": []
+  },
+  {
+    "id": "tl-014",
+    "era": "Character Lore",
+    "year": "2024-01-04",
+    "title": "Fragment Solidarity Explained",
+    "description": "Hurting one Fragment is effectively hurting all of them due to their shared familial bond.",
+    "characters": []
+  },
+  {
+    "id": "tl-015",
+    "era": "Power Scaling",
+    "year": "2024-01-04",
+    "title": "Red vs Blue Matchup Clarified",
+    "description": "Despite elemental advantage, Blue is still unable to overcome Red's overwhelming raw power.",
+    "characters": []
+  },
+  {
+    "id": "tl-016",
+    "era": "Character Lore",
+    "year": "2024-01-05",
+    "title": "Rindo Preferences Revealed",
+    "description": "Blue and Red are identified as the Fragments most likely to enjoy the Rindos.",
+    "characters": []
+  },
+  {
+    "id": "tl-017",
+    "era": "Combat Lore",
+    "year": "2024-01-07",
+    "title": "Fragment Sparring Confirmed",
+    "description": "Fragments sometimes engage in serious combat to settle disputes due to their inability to permanently kill one another.",
+    "characters": []
+  },
+  {
+    "id": "tl-018",
+    "era": "Major Revelation",
+    "year": "2024-01-11",
+    "title": "Permanent Fragment Death Explained",
+    "description": "Certain reality-defying entities and almighty beings are capable of permanently destroying Fragments.",
+    "characters": []
+  },
+  {
+    "id": "tl-019",
+    "era": "Major Revelation",
+    "year": "2024-01-11",
+    "title": "Ainul's Unique Existence Clarified",
+    "description": "A distinction is established between immortality and Ainul's state of being literally unable to die.",
+    "characters": []
+  },
+  {
+    "id": "tl-020",
+    "era": "Fusion Lore",
+    "year": "2024-02-04",
+    "title": "Fusion Memory Retention Revealed",
+    "description": "Fragments retain memories and emotional bonds formed during Fusion.",
+    "characters": []
+  },
+  {
+    "id": "tl-021",
+    "era": "Fusion Lore",
+    "year": "2024-02-04",
+    "title": "Fusion Stability Explained",
+    "description": "Fusions are not temporary and can exist indefinitely unless they willingly separate or experience severe internal conflict.",
+    "characters": []
+  },
+  {
+    "id": "tl-022",
+    "era": "Major Revelation",
+    "year": "2024-02-15",
+    "title": "The Beast Revisited",
+    "description": "The Beast is confirmed to be Ainul's equivalent of an Overclock state.",
+    "characters": []
+  },
+  {
+    "id": "tl-023",
+    "era": "Power Scaling",
+    "year": "2024-04-07",
+    "title": "Overclock Power Clarified",
+    "description": "An Overclocked Fragment can surpass multiple Dormant and even certain Awakened Fusions.",
+    "characters": []
+  },
+  {
+    "id": "tl-024",
+    "era": "Worldbuilding",
+    "year": "2024-05-07",
+    "title": "Fragment Animal Forms Mentioned",
+    "description": "The concept of animal counterparts for Fragments is discussed but remains undeveloped.",
+    "characters": []
+  },
+  {
+    "id": "tl-025",
+    "era": "Fusion Lore",
+    "year": "2024-05-28",
+    "title": "Recursive Fusion Confirmed",
+    "description": "Fusions are capable of fusing with other Fragments and Fusions. The final result remains identical regardless of fusion order.",
+    "characters": []
+  }
 ]
