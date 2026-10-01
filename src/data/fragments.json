@@ -1,0 +1,20 @@
+[
+  {
+    "id": "white", "name": "White", "title": "The Unbroken Light", "kind": "Fragment", "aspect": "Creation & Memory", "description": "The eldest known Fragment, White carries the first memory of a world before the Sundering. Their radiance does not illuminate—it reveals what reality has tried to forget.",
+    "abilities": ["Pale Genesis", "Memory Incarnation", "Law of Stillness"],
+    "combatAttributes": {"might": 74, "arcana": 98, "resolve": 91, "celerity": 63},
+    "relationships": ["Black", "Grey"], "image": "white", "tags": ["fragment", "primordial", "memory", "creation"]
+  },
+  {
+    "id": "black", "name": "Black", "title": "The Final Shadow", "kind": "Fragment", "aspect": "Ending & Silence", "description": "Black is the certainty at the end of every prophecy. Crowned in the void between stars, he commands the merciful silence that follows all things.",
+    "abilities": ["Eventide Dominion", "Null Crown", "Last Word"],
+    "combatAttributes": {"might": 96, "arcana": 90, "resolve": 95, "celerity": 78},
+    "relationships": ["White", "Red", "Grey"], "image": "black", "tags": ["fragment", "primordial", "void", "ending"]
+  },
+  {
+    "id": "red", "name": "Red", "title": "The Wound That Walks", "kind": "Fragment", "aspect": "Conflict & Desire", "description": "Every oath broken in anger feeds Red's furnace-heart. She is worshipped by conquerors and feared by those who understand that desire is merely war turned inward.",
+    "abilities": ["Crimson Edict", "War-Song", "Blood Meridian"],
+    "combatAttributes": {"might": 94, "arcana": 72, "resolve": 86, "celerity": 92},
+    "relationships": ["Black", "Grey"], "image": "red", "tags": ["fragment", "war", "desire", "crimson"]
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {"id":"ivory-seat","name":"The Ivory Seat","ordinal":"I","keeper":"White","domain":"Remembrance","description":"A throne cut from the first moon, where every lost name remains carved beneath the frost."},
+  {"id":"hollow-seat","name":"The Hollow Seat","ordinal":"II","keeper":"Black","domain":"Finality","description":"An empty throne whose sovereign stands behind it, waiting for the last claimant to fall."},
+  {"id":"sanguine-seat","name":"The Sanguine Seat","ordinal":"III","keeper":"Red","domain":"Strife","description":"Forged from surrendered blades and renewed by every war declared in earnest."},
+  {"id":"veiled-seat","name":"The Veiled Seat","ordinal":"IV","keeper":"Grey","domain":"Contradiction","description":"Seen only in reflections, the fourth throne judges truths that cannot coexist."},
+  {"id":"verdant-seat","name":"The Verdant Seat","ordinal":"V","keeper":null,"domain":"Hunger","description":"Root-bound and vacant since the Beast devoured its nameless keeper."},
+  {"id":"glass-seat","name":"The Glass Seat","ordinal":"VI","keeper":null,"domain":"Fate","description":"Its facets show every coronation except the one that will truly occur."},
+  {"id":"last-seat","name":"The Last Seat","ordinal":"VII","keeper":null,"domain":"Witness","description":"No record agrees on its shape. The Ainul insist it has always been occupied."}
+]

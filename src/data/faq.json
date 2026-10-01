@@ -1,0 +1,6 @@
+[
+  {"id":"faq-fragment","question":"What is a Fragment?","answer":"A sovereign incarnation of one principle released during the Sundering. Fragments are persons, powers, and laws of nature at once.","characters":["White","Black","Red"]},
+  {"id":"faq-fusion","question":"How are Fusions created?","answer":"A Fusion appears when two or more Fragments sustain a shared contradiction without destroying one another.","characters":["Grey"]},
+  {"id":"faq-thrones","question":"Do the Seven Thrones grant power?","answer":"No. A throne recognizes power already present and binds it to a domain, turning capability into cosmic obligation.","characters":["White","Black","Red","Grey"]},
+  {"id":"faq-death","question":"Can a Fragment die?","answer":"A body can be broken. An Aspect can only end when nothing in creation expresses it—a much rarer condition.","characters":["Black"]}
+]
