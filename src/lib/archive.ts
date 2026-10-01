@@ -11,6 +11,7 @@ export type Character = {
   id: string; name: string; title: string; kind: "Fragment" | "Fusion"; aspect: string;
   description: string; abilities: string[]; combatAttributes: CombatAttributes;
   relationships: string[]; fusionOf?: string[]; image: string; tags: string[];
+  combatSummary?: string; disposition?: string;
 };
 export type TimelineEntry = (typeof timeline)[number];
 export type LinkedEntry = (typeof ama)[number] | (typeof faq)[number];
