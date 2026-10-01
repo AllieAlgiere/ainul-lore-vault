@@ -6,7 +6,7 @@ import { allTags, filterCharacters } from "@/lib/archive";
 import { Breadcrumbs, CharacterCard, EmptyArchive, PageHeader } from "./archive-ui";
 
 export function CharactersIndex({ query, tag }: { query: string; tag: string }) {
-  const navigate = useNavigate({ from: "/characters" });
+  const navigate = useNavigate({ from: "/characters/" });
   const results = filterCharacters(query, tag);
   const update = (next: { q?: string; tag?: string }) => void navigate({ search: (prev) => ({ ...prev, ...next }), replace: true });
   return <>
