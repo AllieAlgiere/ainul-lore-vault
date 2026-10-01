@@ -25,8 +25,8 @@ export const characterById = (id: string) => characters.find((character) => char
 export const characterByName = (name: string) => characters.find((character) => character.name.toLowerCase() === name.toLowerCase());
 export const characterHref = (name: string) => `/characters/${characterByName(name)?.id ?? name.toLowerCase()}`;
 export const fusionsFor = (name: string) => fusionCharacters.filter((character) => character.fusionOf?.includes(name));
-export const timelineFor = (name: string) => timeline.filter((entry) => entry.characters.includes(name));
-export const amaFor = (name: string) => ama.filter((entry) => entry.characters.includes(name));
+export const timelineFor = (name: string) => timeline.filter((entry) => (entry.characters as string[]).includes(name));
+export const amaFor = (name: string) => ama.filter((entry) => (entry.characters as string[]).includes(name));
 export const faqFor = (name: string) => faq.filter((entry) => (entry.characters as string[]).includes(name));
 export const powerFor = (name: string) => powerscaling.find((entry) => entry.character === name);
 export const allTags = [...new Set(characters.flatMap((character) => character.tags))].sort();
