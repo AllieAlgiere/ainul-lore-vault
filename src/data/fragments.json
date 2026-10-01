@@ -1,20 +1,262 @@
 [
   {
-    "id": "white", "name": "White", "title": "The Unbroken Light", "kind": "Fragment", "aspect": "Creation & Memory", "description": "The eldest known Fragment, White carries the first memory of a world before the Sundering. Their radiance does not illuminate—it reveals what reality has tried to forget.",
-    "abilities": ["Pale Genesis", "Memory Incarnation", "Law of Stillness"],
-    "combatAttributes": {"might": 74, "arcana": 98, "resolve": 91, "celerity": 63},
-    "relationships": ["Black", "Grey"], "image": "white", "tags": ["fragment", "primordial", "memory", "creation"]
+    "id": "white",
+    "name": "White",
+    "title": "Embodiment of Guidance",
+    "kind": "Fragment",
+    "aspect": "Guidance",
+    "description": "White is one of the two strongest Fragments of Ainul. He serves as a stabilizing influence among the Fragment family and often acts as mediator during disputes. White understands Black's destructive nature better than anyone else and dedicates himself to helping Black remain free without endangering the world.",
+    "abilities": [],
+    "combatAttributes": "Second strongest Fragment.",
+    "disposition": "Patient, compassionate and protective.",
+    "favoriteFood": "Tacos",
+    "quotes": [
+      "White assumes you need a hug."
+    ],
+    "relationships": [
+      "Black",
+      "Grey"
+    ],
+    "image": "white",
+    "tags": [
+      "fragment",
+      "guidance"
+    ]
   },
   {
-    "id": "black", "name": "Black", "title": "The Final Shadow", "kind": "Fragment", "aspect": "Ending & Silence", "description": "Black is the certainty at the end of every prophecy. Crowned in the void between stars, he commands the merciful silence that follows all things.",
-    "abilities": ["Eventide Dominion", "Null Crown", "Last Word"],
-    "combatAttributes": {"might": 96, "arcana": 90, "resolve": 95, "celerity": 78},
-    "relationships": ["White", "Red", "Grey"], "image": "black", "tags": ["fragment", "primordial", "void", "ending"]
+    "id": "black",
+    "name": "Black",
+    "title": "Embodiment of Destruction",
+    "kind": "Fragment",
+    "aspect": "Destruction",
+    "description": "Black represents destruction in its purest form. Despite his terrifying power and animalistic instincts, he cares deeply for his fellow Fragments and would rather destroy the world itself than allow harm to come to his family.",
+    "abilities": [],
+    "combatAttributes": "Strongest Fragment.",
+    "disposition": "Wild, instinctive and fiercely loyal.",
+    "favoriteFood": "Honey-glazed roast ham",
+    "quotes": [],
+    "relationships": [
+      "White",
+      "Grey"
+    ],
+    "image": "black",
+    "tags": [
+      "destruction",
+      "fragment"
+    ]
   },
   {
-    "id": "red", "name": "Red", "title": "The Wound That Walks", "kind": "Fragment", "aspect": "Conflict & Desire", "description": "Every oath broken in anger feeds Red's furnace-heart. She is worshipped by conquerors and feared by those who understand that desire is merely war turned inward.",
-    "abilities": ["Crimson Edict", "War-Song", "Blood Meridian"],
-    "combatAttributes": {"might": 94, "arcana": 72, "resolve": 86, "celerity": 92},
-    "relationships": ["Black", "Grey"], "image": "red", "tags": ["fragment", "war", "desire", "crimson"]
+    "id": "red",
+    "name": "Red",
+    "title": "Embodiment of Passion",
+    "kind": "Fragment",
+    "aspect": "Passion",
+    "description": "Red embodies passion, drive and intensity. He possesses overwhelming firepower and is among the most destructive Fragments in direct combat.",
+    "abilities": [
+      "Pyrokinesis",
+      "Nuclear Flame Output"
+    ],
+    "combatAttributes": "Extremely high offensive capability.",
+    "disposition": "Energetic, impulsive and passionate.",
+    "favoriteFood": "Chili",
+    "quotes": [],
+    "relationships": [
+      "Blue",
+      "Yellow",
+      "Green"
+    ],
+    "image": "red",
+    "tags": [
+      "fire",
+      "fragment",
+      "passion"
+    ]
+  },
+  {
+    "id": "blue",
+    "name": "Blue",
+    "title": "Embodiment of Curiosity",
+    "kind": "Fragment",
+    "aspect": "Curiosity",
+    "description": "Blue represents curiosity and the desire to learn. While individually the weakest Fragment, his unique abilities allow him to naturally counter Red's fire-based powers.",
+    "abilities": [],
+    "combatAttributes": "Weakest Fragment individually.",
+    "disposition": "Curious, cheerful and excitable.",
+    "favoriteFood": "Mac and Cheese",
+    "quotes": [],
+    "relationships": [
+      "Red",
+      "Yellow",
+      "Green"
+    ],
+    "image": "blue",
+    "tags": [
+      "curiosity",
+      "fragment"
+    ]
+  },
+  {
+    "id": "green",
+    "name": "Green",
+    "title": "Embodiment of Harmony",
+    "kind": "Fragment",
+    "aspect": "Harmony",
+    "description": "Green embodies harmony and balance. Though gentle by nature, Green will not tolerate cruelty or unjust violence.",
+    "abilities": [],
+    "combatAttributes": "",
+    "disposition": "Calm, peaceful and thoughtful.",
+    "favoriteFood": "Pasta salad with rucola, roasted pine nuts, balsamico, Italian ham and parmesan",
+    "quotes": [],
+    "relationships": [
+      "Red",
+      "Blue",
+      "Yellow"
+    ],
+    "image": "green",
+    "tags": [
+      "fragment",
+      "harmony"
+    ]
+  },
+  {
+    "id": "yellow",
+    "name": "Yellow",
+    "title": "Embodiment of Optimism",
+    "kind": "Fragment",
+    "aspect": "Optimism",
+    "description": "Yellow represents optimism, hope and positivity. Often viewed as one of the most approachable Fragments.",
+    "abilities": [],
+    "combatAttributes": "",
+    "disposition": "Friendly, encouraging and upbeat.",
+    "favoriteFood": "Cordon Bleu with country potatoes",
+    "quotes": [],
+    "relationships": [
+      "Red",
+      "Blue",
+      "Green"
+    ],
+    "image": "yellow",
+    "tags": [
+      "fragment",
+      "optimism"
+    ]
+  },
+  {
+    "id": "cyan",
+    "name": "Cyan",
+    "title": "Embodiment of Discovery",
+    "kind": "Fragment",
+    "aspect": "Discovery",
+    "description": "Cyan embodies discovery, exploration and finding the unknown.",
+    "abilities": [],
+    "combatAttributes": "",
+    "disposition": "Adventurous and inquisitive.",
+    "favoriteFood": "Cheeseburgers",
+    "quotes": [],
+    "relationships": [],
+    "image": "cyan",
+    "tags": [
+      "discovery",
+      "fragment"
+    ]
+  },
+  {
+    "id": "magenta",
+    "name": "Magenta",
+    "title": "Embodiment of Pride",
+    "kind": "Fragment",
+    "aspect": "Pride",
+    "description": "Magenta represents confidence, pride and self-worth. He is highly social and frequently associated with parties and nightlife.",
+    "abilities": [],
+    "combatAttributes": "",
+    "disposition": "Confident, social and charismatic.",
+    "favoriteFood": "Nigiri Sushi",
+    "quotes": [],
+    "relationships": [],
+    "image": "magenta",
+    "tags": [
+      "fragment",
+      "pride"
+    ]
+  },
+  {
+    "id": "umbra",
+    "name": "Umbra",
+    "title": "Embodiment of Ambition",
+    "kind": "Fragment",
+    "aspect": "Ambition",
+    "description": "Umbra embodies ambition, practicality and success. He is one of the most calculating Fragments and often focuses on long-term gains.",
+    "abilities": [],
+    "combatAttributes": "Fourth strongest Fragment.",
+    "disposition": "Calculating, ambitious and practical.",
+    "favoriteFood": "Cheese-ham pancakes",
+    "quotes": [],
+    "relationships": [],
+    "image": "umbra",
+    "tags": [
+      "ambition",
+      "fragment"
+    ]
+  },
+  {
+    "id": "taffy",
+    "name": "Taffy",
+    "title": "Embodiment of Instinct",
+    "kind": "Fragment",
+    "aspect": "Instinct",
+    "description": "Taffy represents instinct, intuition and immediate action. He is among the strongest Fragments and fiercely loyal to the family.",
+    "abilities": [],
+    "combatAttributes": "Third strongest Fragment.",
+    "disposition": "Wild, direct and loyal.",
+    "favoriteFood": "Smoked eel",
+    "quotes": [],
+    "relationships": [],
+    "image": "taffy",
+    "tags": [
+      "fragment",
+      "instinct"
+    ]
+  },
+  {
+    "id": "lavender",
+    "name": "Lavender",
+    "title": "Embodiment of Expression",
+    "kind": "Fragment",
+    "aspect": "Expression",
+    "description": "Lavender embodies expression, creativity and communication.",
+    "abilities": [],
+    "combatAttributes": "",
+    "disposition": "Expressive and artistic.",
+    "favoriteFood": "",
+    "quotes": [],
+    "relationships": [],
+    "image": "lavender",
+    "tags": [
+      "expression",
+      "fragment"
+    ]
+  },
+  {
+    "id": "cider",
+    "name": "Cider",
+    "title": "Embodiment of Emotion",
+    "kind": "Fragment",
+    "aspect": "Emotion",
+    "description": "Cider embodies emotion itself. His strength fluctuates according to his emotional state, allowing him to reach incredible heights of power.",
+    "abilities": [
+      "Mood-Based Power Scaling"
+    ],
+    "combatAttributes": "Fifth strongest Fragment at maximum output.",
+    "disposition": "Emotionally driven and unpredictable.",
+    "favoriteFood": "",
+    "quotes": [],
+    "relationships": [
+      "Umbra"
+    ],
+    "image": "cider",
+    "tags": [
+      "emotion",
+      "fragment"
+    ]
   }
 ]

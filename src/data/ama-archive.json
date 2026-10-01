@@ -1,5 +1,363 @@
 [
-  {"id":"ama-01","date":"18 Frostfall 1191 AS","question":"Can a Fragment refuse its Aspect?","answer":"Red once attempted it. The resulting century is remembered as the Quiet War, because no survivor will describe it.","characters":["Red"]},
-  {"id":"ama-02","date":"03 Emberwane 1193 AS","question":"Does Grey remember being White and Black?","answer":"Grey remembers both origins as mutually exclusive truths, and considers the question impolite rather than inaccurate.","characters":["Grey","White","Black"]},
-  {"id":"ama-03","date":"27 Hollowtide 1194 AS","question":"Can the Beast be killed?","answer":"The Archive distinguishes between killing a thing and making a world in which it was never hungry.","characters":[]}
+  {
+    "id": "ama-001",
+    "date": "2023-10-28",
+    "questioner": "Brodnik",
+    "question": "How does White feel about Black?",
+    "answer": "White realizes that Black is a danger to the world if left unchecked, but does not hate him in any way. White sympathizes with Black's difficulties regarding social interaction and wants to keep the monster side at bay while allowing him as much freedom as possible without endangering the world.",
+    "characters": [
+      "White",
+      "Black"
+    ],
+    "tags": [
+      "Relationships",
+      "Black",
+      "White"
+    ]
+  },
+  {
+    "id": "ama-002",
+    "date": "2023-10-29",
+    "questioner": "Wolfi",
+    "question": "What do Red, Black, White and Umbra think of me?",
+    "answer": "Red: Would smash. · Black: Sees puppy. · White: Assumes you need a hug and guidance. · Umbra: Approves but is appalled by the lack of monetary gain.",
+    "characters": [
+      "Red",
+      "Black",
+      "White",
+      "Umbra"
+    ],
+    "tags": [
+      "Opinions",
+      "Humor"
+    ]
+  },
+  {
+    "id": "ama-003",
+    "date": "2023-11-01",
+    "questioner": "Onyxblackhawk",
+    "question": "Will Magenta ever settle down with someone?",
+    "answer": "Hard to say considering he is a part of someone else.",
+    "characters": [
+      "Magenta"
+    ],
+    "tags": [
+      "Relationships",
+      "Magenta"
+    ]
+  },
+  {
+    "id": "ama-004",
+    "date": "2023-11-14",
+    "questioner": "Brodnik",
+    "question": "Is White the only one who engages Black?",
+    "answer": "All Fragments can interact with Black, but doing so is compared to entering a tiger's cage. White is simply the most experienced at handling him. None of the Fragments hate Black.",
+    "characters": [
+      "White",
+      "Black"
+    ],
+    "tags": [
+      "Relationships",
+      "Fragment Dynamics"
+    ]
+  },
+  {
+    "id": "ama-005",
+    "date": "2023-11-14",
+    "questioner": "Brodnik",
+    "question": "Can Black permanently kill another Fragment?",
+    "answer": "No. Fragments share Ainul's removed concept of death. Black can hurt them but cannot erase them. He would never intentionally do so because he values his family above everything else.",
+    "characters": [
+      "Black"
+    ],
+    "tags": [
+      "Immortality",
+      "Black",
+      "Lore"
+    ]
+  },
+  {
+    "id": "ama-006",
+    "date": "2023-11-14",
+    "questioner": "Wolfi",
+    "question": "What food does Black like?",
+    "answer": "Black can eat literally anything, including antimatter, concrete and pineapple pizza. His favorite food is honey-glazed roast ham.",
+    "characters": [
+      "Black"
+    ],
+    "tags": [
+      "Food",
+      "Black"
+    ]
+  },
+  {
+    "id": "ama-007",
+    "date": "2023-11-14",
+    "questioner": "Wolfi",
+    "question": "What are all Fragments' favorite foods?",
+    "answer": "Red: Chili · Blue: Mac and cheese · Green: Cold pasta salad with rucola, roasted pine nuts, balsamic vinegar, Italian ham and parmesan · Yellow: Cordon Bleu with country potatoes · Cyan: Cheeseburgers · Magenta: Nigiri sushi · Umbra: Cheese-ham pancakes · Taffy: Smoked eel · Black: Honey-glazed roast ham · White: Tacos",
+    "characters": [],
+    "tags": [
+      "Food",
+      "Lifestyle"
+    ]
+  },
+  {
+    "id": "ama-008",
+    "date": "2023-11-14",
+    "questioner": "Jadgrimga",
+    "question": "Are there more hidden Fragments?",
+    "answer": "There are exactly twelve Fragments. However, Fragments can fuse into entirely new entities.",
+    "characters": [],
+    "tags": [
+      "Fragments",
+      "Fusion",
+      "Lore"
+    ]
+  },
+  {
+    "id": "ama-009",
+    "date": "2023-11-14",
+    "questioner": "Jadgrimga",
+    "question": "Can Fragments fuse into other colors?",
+    "answer": "Yes. Red and Blue, for example, would create Purple.",
+    "characters": [],
+    "tags": [
+      "Fusion"
+    ]
+  },
+  {
+    "id": "ama-010",
+    "date": "2023-11-17",
+    "questioner": "Brodnik",
+    "question": "How many Fragments exist?",
+    "answer": "There are twelve Fragments in total. No more and no less.",
+    "characters": [],
+    "tags": [
+      "Fragments",
+      "Lore"
+    ]
+  },
+  {
+    "id": "ama-011",
+    "date": "2023-11-17",
+    "questioner": "Brodnik",
+    "question": "What happens when all Fragments fuse?",
+    "answer": "The result is always Ainul as he was meant to be. Any missing Fragment creates an incomplete outcome.",
+    "characters": [],
+    "tags": [
+      "Ainul",
+      "Fusion"
+    ]
+  },
+  {
+    "id": "ama-012",
+    "date": "2023-11-17",
+    "questioner": "Brodnik",
+    "question": "What is Grey?",
+    "answer": "Grey is the fusion of White and Black. It represents the physical body of the Whole One but lacks the complete emotional makeup of Ainul.",
+    "characters": [
+      "Grey",
+      "White",
+      "Black"
+    ],
+    "tags": [
+      "Fusion",
+      "Grey"
+    ]
+  },
+  {
+    "id": "ama-013",
+    "date": "2023-11-17",
+    "questioner": "Brodnik",
+    "question": "Is there another form beyond Ainul and the Fragments?",
+    "answer": "Yes. Both the Fragments and Ainul can assume a form known as The Beast.",
+    "characters": [],
+    "tags": [
+      "Beast",
+      "Transformation"
+    ]
+  },
+  {
+    "id": "ama-014",
+    "date": "2023-12-23",
+    "questioner": "Brodnik",
+    "question": "Which Fragment is the best dancer?",
+    "answer": "Magenta shares first place with a then-unrevealed Fragment.",
+    "characters": [
+      "Magenta"
+    ],
+    "tags": [
+      "Lifestyle",
+      "Magenta"
+    ]
+  },
+  {
+    "id": "ama-015",
+    "date": "2023-12-23",
+    "questioner": "Brodnik",
+    "question": "Who is the better gamer, Yellow or Lavender?",
+    "answer": "Lavender generally wins direct competition due to a more aggressive and fast-paced style.",
+    "characters": [
+      "Yellow",
+      "Lavender"
+    ],
+    "tags": [
+      "Gaming"
+    ]
+  },
+  {
+    "id": "ama-016",
+    "date": "2023-12-29",
+    "questioner": "Brodnik",
+    "question": "Where does Cider rank in power?",
+    "answer": "Fifth strongest Fragment overall.",
+    "characters": [],
+    "tags": [
+      "Power Scaling",
+      "Cider"
+    ]
+  },
+  {
+    "id": "ama-017",
+    "date": "2023-12-29",
+    "questioner": "Brodnik",
+    "question": "What are the top five strongest Fragments?",
+    "answer": [
+      "Black",
+      "White",
+      "Taffy",
+      "Umbra",
+      "Cider"
+    ],
+    "characters": [],
+    "tags": [
+      "Power Scaling"
+    ]
+  },
+  {
+    "id": "ama-018",
+    "date": "2024-01-04",
+    "questioner": "Brodnik",
+    "question": "Can other Fragments go berserk?",
+    "answer": "All Fragments react differently, but hurting one unjustly tends to provoke the others. If you hurt one Fragment, you hurt all of them.",
+    "characters": [],
+    "tags": [
+      "Combat",
+      "Relationships"
+    ]
+  },
+  {
+    "id": "ama-019",
+    "date": "2024-01-04",
+    "questioner": "Brodnik",
+    "question": "Can Blue defeat Red because of elemental advantage?",
+    "answer": "Blue has the natural advantage, but Red's overwhelming power output would still win.",
+    "characters": [
+      "Blue",
+      "Red"
+    ],
+    "tags": [
+      "Combat"
+    ]
+  },
+  {
+    "id": "ama-020",
+    "date": "2024-01-05",
+    "questioner": "Kennelz",
+    "question": "Which Fragment enjoys Rindos the most?",
+    "answer": "Blue likes them most, while Red would absolutely go camping with them.",
+    "characters": [
+      "Blue",
+      "Red"
+    ],
+    "tags": [
+      "Relationships"
+    ]
+  },
+  {
+    "id": "ama-021",
+    "date": "2024-01-07",
+    "questioner": "Brodnik",
+    "question": "Do Fragments spar with each other?",
+    "answer": "Yes. Since Fragments cannot normally kill each other, they sometimes settle disputes through combat.",
+    "characters": [],
+    "tags": [
+      "Combat",
+      "Hierarchy"
+    ]
+  },
+  {
+    "id": "ama-022",
+    "date": "2024-01-11",
+    "questioner": "Brodnik",
+    "question": "Can a Fragment be permanently destroyed?",
+    "answer": "Yes. Powerful reality-defying entities, almighty deities and major reality warpers can erase a Fragment permanently.",
+    "characters": [],
+    "tags": [
+      "Death",
+      "Lore"
+    ]
+  },
+  {
+    "id": "ama-023",
+    "date": "2024-01-11",
+    "questioner": "Brodnik",
+    "question": "Can Ainul be destroyed when complete?",
+    "answer": "No. Ainul states that while Fragments can potentially be destroyed, the complete Whole One cannot die.",
+    "characters": [],
+    "tags": [
+      "Ainul",
+      "Immortality"
+    ]
+  },
+  {
+    "id": "ama-024",
+    "date": "2024-02-04",
+    "questioner": "Brodnik",
+    "question": "Do Fusions keep memories after splitting?",
+    "answer": "Yes. All parts retain the experiences and emotional bonds formed by the Fusion.",
+    "characters": [],
+    "tags": [
+      "Fusion",
+      "Memory"
+    ]
+  },
+  {
+    "id": "ama-025",
+    "date": "2024-02-15",
+    "questioner": "Brodnik",
+    "question": "Does overclocked fusion change Ainul?",
+    "answer": "No. All Fragments together always result in Ainul. However Ainul possesses his own unleashed state known as The Beast.",
+    "characters": [],
+    "tags": [
+      "Ainul",
+      "Beast",
+      "Fusion"
+    ]
+  },
+  {
+    "id": "ama-026",
+    "date": "2024-04-07",
+    "questioner": "Brodnik",
+    "question": "How strong is Overclock compared to Fusion?",
+    "answer": "A Fragment in Overclock can overpower Dormant Fusions of two or three Fragments and in some cases even Awakened triple-fusions.",
+    "characters": [],
+    "tags": [
+      "Overclock",
+      "Power Scaling"
+    ]
+  },
+  {
+    "id": "ama-027",
+    "date": "2024-05-28",
+    "questioner": "Jadgrimga",
+    "question": "Can Fusions fuse with other Fragments or Fusions?",
+    "answer": "Yes. The order does not matter. The final result is always the same because every component originates from Ainul.",
+    "characters": [],
+    "tags": [
+      "Fusion",
+      "Lore"
+    ]
+  }
 ]
