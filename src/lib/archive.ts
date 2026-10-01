@@ -39,5 +39,5 @@ export const filterCharacters = (query: string, tag: string) => {
 };
 
 export const thronesFor = (character: Character) => thrones.filter((throne) => throne.keeper === character.name || (character.fusionOf ?? []).includes(throne.keeper ?? ""));
-export const parentCategory = (character: Character) => character.kind === "Fusion" ? { label: "Fusions", to: "/fusions" } : { label: "Fragments", to: "/fragments" };
+export const parentCategory = (character: Character) => character.kind === "Fusion" ? ({ label: "Fusions", to: "/fusions" } as const) : ({ label: "Fragments", to: "/fragments" } as const);
 export const timelineCategories = ["Fragment Lore", "Fusion Lore", "Thrones", "Ainul", "Beast"] as const;
