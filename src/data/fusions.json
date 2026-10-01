@@ -1,0 +1,8 @@
+[
+  {
+    "id": "grey", "name": "Grey", "title": "The Ashen Concord", "kind": "Fusion", "aspect": "Paradox & Equilibrium", "description": "Born where White's remembrance met Black's oblivion, Grey keeps the impossible histories. Behind the porcelain mask, two contrary wills speak with one voice.",
+    "abilities": ["Contradiction Made Flesh", "Ashen Archive", "Balanced Ruin"],
+    "combatAttributes": {"might": 82, "arcana": 96, "resolve": 99, "celerity": 70},
+    "relationships": ["White", "Black", "Red"], "fusionOf": ["White", "Black"], "image": "grey", "tags": ["fusion", "paradox", "archive", "equilibrium"]
+  }
+]
