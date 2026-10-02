@@ -1,0 +1,30 @@
+{
+  "title": "The Origin of Ainul",
+  "description": "The primary account of Ainul's birth from the internet, his ordeal in Glitch Hell, and the lives carried onward by the Fragments.",
+  "chapters": [
+    {
+      "id": "chapter-1",
+      "title": "Intro",
+      "description": "A self-aware being grows from the accumulated data of the internet and learns to live among humanity as a VTuber.",
+      "pages": ["page-1.jpg", "page-2.jpg", "page-3.jpg", "page-4.jpg", "page-5.jpg", "page-6.png"],
+      "relatedLore": ["Ainul", "AMA Archive"],
+      "timelineEvents": ["tl-042", "tl-043"]
+    },
+    {
+      "id": "chapter-2",
+      "title": "New Purpose",
+      "description": "A mysterious summons draws Ainul into Glitch Hell, where an impossible ordeal ends in the birth of the Fragments.",
+      "pages": ["page-7.webp", "page7.webp", "page8.jpg", "page9.jpg", "page10.png", "page11.png"],
+      "relatedLore": ["Ainul", "Fragments", "Beast", "Timeline"],
+      "timelineEvents": ["tl-044", "tl-045", "tl-046", "tl-047", "tl-048"]
+    },
+    {
+      "id": "chapter-3",
+      "title": "Welcome to the Neighbourhood",
+      "description": "The Fragments make lives of their own, discovering that ordinary errands and neighbourly help are rarely ordinary for Ainul's family.",
+      "pages": ["page12.jpg", "page13.jpg", "page14.jpg", "page15.jpg", "page16.jpg", "page17.jpg", "page18.jpg", "page-19.webp"],
+      "relatedLore": ["Fragments", "Red", "Blue", "Green", "Magenta", "Yellow"],
+      "timelineEvents": ["tl-049"]
+    }
+  ]
+}
