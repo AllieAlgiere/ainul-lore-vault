@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { OriginComicIndex } from "@/components/archive/comic-reader";
+export const Route = createFileRoute("/origin-comic/")({ head: () => ({ meta: [{ title: "Origin Comic | Ainul Archive" }, { name: "description", content: "Read the canonical illustrated origin of Ainul and the Fragments." }, { property: "og:title", content: "Origin Comic | Ainul Archive" }, { property: "og:description", content: "The canonical illustrated origin of Ainul and the Fragments." }, { property: "og:type", content: "article" }, { name: "twitter:card", content: "summary_large_image" }] }), component: OriginComicIndex });

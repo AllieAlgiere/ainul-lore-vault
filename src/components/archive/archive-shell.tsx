@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "@tanstack/react-router";
-import { BookOpen, Crown, Flame, HelpCircle, Menu, Search, Shield, Sparkles, Swords, Timer, Users, X } from "lucide-react";
+import { BookOpen, BookOpenText, Crown, Flame, HelpCircle, Menu, Search, Shield, Sparkles, Swords, Timer, Users, X } from "lucide-react";
 import { useState, type FormEvent, type ReactNode } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -11,6 +11,7 @@ const nav = [
   { to: "/thrones", label: "Seven Thrones", icon: Crown },
   { to: "/ainul", label: "Ainul", icon: BookOpen },
   { to: "/beast", label: "Beast", icon: Flame },
+  { to: "/origin-comic", label: "Origin Comic", icon: BookOpenText },
   { to: "/timeline", label: "Timeline", icon: Timer },
   { to: "/ama", label: "AMA Archive", icon: Search },
   { to: "/faq", label: "FAQ", icon: HelpCircle },

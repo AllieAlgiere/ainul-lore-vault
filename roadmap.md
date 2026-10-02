@@ -5,3 +5,6 @@
 - [x] Add generated character portraits and character detail pages
 - [x] Add search, tag filtering, breadcrumbs, and cross-links
 - [x] Complete desktop and mobile end-to-end verification
+- [ ] Add JSON-driven Origin Comic reader with chapter navigation and reading modes
+- [ ] Integrate comic canon into the timeline with source links
+- [ ] Verify comic reading and timeline flows on desktop and mobile

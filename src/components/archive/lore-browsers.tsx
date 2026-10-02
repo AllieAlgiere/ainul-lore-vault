@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
-import { Search, X } from "lucide-react";
+import { Link } from "@tanstack/react-router";
+import { BookOpenText, Search, X } from "lucide-react";
 import { ama, characters, timeline, timelineCategories } from "@/lib/archive";
 import { archiveImages } from "@/lib/archive-images";
 import { Breadcrumbs, CharacterLink, PageHeader } from "./archive-ui";
@@ -35,6 +36,7 @@ export function TimelinePage() {
                 <h2 className="mt-2 font-display text-3xl">{event.title}</h2>
                 <p className="mt-3 leading-7 text-muted-foreground">{event.description}</p>
                 {event.characters.length > 0 && <div className="mt-3 flex flex-wrap gap-x-3 text-sm">{event.characters.map((name) => <CharacterLink key={name} name={name} />)}</div>}
+                {"comicChapter" in event && event.comicChapter && <Link to="/origin-comic/$chapter" params={{ chapter: event.comicChapter }} className="mt-4 inline-flex items-center gap-2 text-sm text-primary hover:text-foreground"><BookOpenText className="size-4" />View comic chapter</Link>}
               </article>
             ))}
           </div>

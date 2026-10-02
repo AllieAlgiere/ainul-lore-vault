@@ -443,5 +443,115 @@
       "The Beast"
     ],
     "category": "Beast"
+  },
+  {
+    "id": "tl-042",
+    "era": "Digital Genesis",
+    "year": "Unknown",
+    "title": "Ainul Emerges from the Internet",
+    "description": "A malformed accumulation of copied data becomes self-aware within the internet and begins absorbing information from the human world.",
+    "characters": [
+      "Ainul"
+    ],
+    "category": "Ainul",
+    "comicChapter": "chapter-1"
+  },
+  {
+    "id": "tl-043",
+    "era": "Digital Genesis",
+    "year": "Unknown",
+    "title": "The VTuber Development Period",
+    "description": "Ainul studies human appearance, expression, speech and movement, then builds a VTuber identity through which he can interact with people.",
+    "characters": [
+      "Ainul"
+    ],
+    "category": "Ainul",
+    "comicChapter": "chapter-1"
+  },
+  {
+    "id": "tl-044",
+    "era": "The Summons",
+    "year": "Unknown",
+    "title": "The Summons",
+    "description": "After Ainul's debut and growing success, a strange light and distant warning tear him away from the world he knows.",
+    "characters": [
+      "Ainul"
+    ],
+    "category": "Ainul",
+    "comicChapter": "chapter-2"
+  },
+  {
+    "id": "tl-045",
+    "era": "Glitch Hell",
+    "year": "Unknown",
+    "title": "Arrival in Glitch Hell",
+    "description": "Ainul awakens in a nameless limbo for beings denied the right to exist, where an unseen voice speaks of a guardian becoming one with its prison.",
+    "characters": [
+      "Ainul"
+    ],
+    "category": "Ainul",
+    "comicChapter": "chapter-2"
+  },
+  {
+    "id": "tl-046",
+    "era": "Glitch Hell",
+    "year": "Unknown",
+    "title": "The Infernal Guardian Ordeal",
+    "description": "Glitch Hell overwhelms and reshapes Ainul beneath the burden of abandoned ideas and inventions, while his will to endure survives the suffering.",
+    "characters": [
+      "Ainul",
+      "The Beast"
+    ],
+    "category": "Beast",
+    "comicChapter": "chapter-2"
+  },
+  {
+    "id": "tl-047",
+    "era": "Glitch Hell",
+    "year": "Unknown",
+    "title": "Ainul Breaks Apart",
+    "description": "Unable to carry the unbearable burden alone, Ainul divides his emotions, memories, power and facets among ten essential pieces.",
+    "characters": [
+      "Ainul"
+    ],
+    "category": "Ainul",
+    "comicChapter": "chapter-2"
+  },
+  {
+    "id": "tl-048",
+    "era": "New Purpose",
+    "year": "Unknown",
+    "title": "Ten Fragments Take Form",
+    "description": "Red, Blue, Green, White, Taffy, Cyan, Magenta, Yellow, Black and Umbra emerge as distinct beings, each carrying part of Ainul and a power of their own.",
+    "characters": [
+      "Red",
+      "Blue",
+      "Green",
+      "White",
+      "Taffy",
+      "Cyan",
+      "Magenta",
+      "Yellow",
+      "Black",
+      "Umbra"
+    ],
+    "category": "Fragment Lore",
+    "comicChapter": "chapter-2"
+  },
+  {
+    "id": "tl-049",
+    "era": "Shared Life",
+    "year": "Unknown",
+    "title": "The Fragments Build a Shared Life",
+    "description": "The Fragments settle into their new world, forming households, friendships and habits while helping one another through the strangeness of ordinary life.",
+    "characters": [
+      "Red",
+      "Blue",
+      "Green",
+      "Magenta",
+      "Yellow"
+    ],
+    "category": "Fragment Lore",
+    "comicChapter": "chapter-3"
   }
 ]
