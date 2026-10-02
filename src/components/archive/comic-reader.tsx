@@ -1,14 +1,9 @@
-import { Link } from "@tanstack/react-router";
+import { Link, useNavigate } from "@tanstack/react-router";
 import { ChevronLeft, ChevronRight, List, Minus, Plus, Rows3 } from "lucide-react";
 import { useEffect, useMemo, useRef, useState, type TouchEvent } from "react";
 import { Button } from "@/components/ui/button";
 import { comicChapters, type ComicChapter } from "@/lib/origin-comic";
 import { Breadcrumbs, CharacterLink, PageHeader } from "./archive-ui";
-
-const loreRoutes: Record<string, string> = {
-  Ainul: "/ainul", Beast: "/beast", Fragments: "/fragments", Fusions: "/fusions",
-  "Seven Thrones": "/thrones", Timeline: "/timeline", FAQ: "/faq", "AMA Archive": "/ama",
-};
 
 function ComicPage({ page, eager = false, zoom = 100 }: { page: ComicChapter["pages"][number]; eager?: boolean; zoom?: number }) {
   return <figure id={`page-${page.pageNumber}`} className="mx-auto w-full scroll-mt-24 text-center" style={{ maxWidth: `${zoom}%` }}><img src={page.url} alt={`Origin Comic page ${page.pageNumber}`} width={768} height={1187} loading={eager ? "eager" : "lazy"} className="mx-auto h-auto w-full border border-border bg-foreground shadow-2xl" /><figcaption className="mt-3 text-[10px] uppercase tracking-[0.18em] text-muted-foreground">Page {page.pageNumber} of 20</figcaption></figure>;
@@ -22,10 +17,17 @@ function ChapterNavigation({ chapter }: { chapter: ComicChapter }) {
 }
 
 function RelatedLore({ chapter }: { chapter: ComicChapter }) {
-  return <section className="border-t border-border pt-8"><p className="archive-eyebrow">Cross-indexed records</p><div className="mt-4 flex flex-wrap gap-2">{chapter.relatedLore.map((name) => loreRoutes[name] ? <Button key={name} asChild variant="outline" size="sm"><Link to={loreRoutes[name]}>{name}</Link></Button> : <Button key={name} asChild variant="outline" size="sm"><Link to="/characters/$id" params={{ id: name.toLowerCase() }} search={{ q: "", tag: "" }}>{name}</Link></Button>)}</div><div className="mt-6"><Button asChild variant="link" className="px-0"><Link to="/timeline">View {chapter.timelineEvents.length} related timeline {chapter.timelineEvents.length === 1 ? "event" : "events"} <ChevronRight /></Link></Button></div></section>;
+  return <section className="border-t border-border pt-8"><p className="archive-eyebrow">Cross-indexed records</p><div className="mt-4 flex flex-wrap gap-2">{chapter.relatedLore.map((name) => <LoreLink key={name} name={name} />)}</div><div className="mt-6"><Button asChild variant="link" className="px-0"><Link to="/timeline">View {chapter.timelineEvents.length} related timeline {chapter.timelineEvents.length === 1 ? "event" : "events"} <ChevronRight /></Link></Button></div></section>;
+}
+
+function LoreLink({ name }: { name: string }) {
+  const labels = { Ainul: "/ainul", Beast: "/beast", Fragments: "/fragments", Fusions: "/fusions", "Seven Thrones": "/thrones", Timeline: "/timeline", FAQ: "/faq", "AMA Archive": "/ama" } as const;
+  if (name in labels) return <Button asChild variant="outline" size="sm"><a href={labels[name as keyof typeof labels]}>{name}</a></Button>;
+  return <Button asChild variant="outline" size="sm"><Link to="/characters/$id" params={{ id: name.toLowerCase() }} search={{ q: "", tag: "" }}>{name}</Link></Button>;
 }
 
 export function ComicReader({ chapter }: { chapter: ComicChapter }) {
+  const navigate = useNavigate();
   const [mode, setMode] = useState<"single" | "continuous">("single");
   const [pageIndex, setPageIndex] = useState(0);
   const [zoom, setZoom] = useState(100);
@@ -59,7 +61,7 @@ export function ComicReader({ chapter }: { chapter: ComicChapter }) {
     <div className="mx-auto max-w-5xl px-4 py-8 sm:px-8 sm:py-12">
       <Breadcrumbs items={[{ label: "Origin Comic", to: "/origin-comic" }, { label: chapter.title }]} />
       <div className="mb-8 grid gap-3 border-y border-border bg-card/40 p-3 sm:flex sm:flex-wrap sm:items-center sm:justify-between">
-        <label className="min-w-0"><span className="sr-only">Select chapter</span><select value={chapter.id} onChange={(event) => { window.location.href = `/origin-comic/${event.target.value}`; }} className="h-9 w-full border border-border bg-background px-3 text-sm text-foreground sm:w-auto">{comicChapters.map((item, index) => <option key={item.id} value={item.id}>Chapter {index + 1}: {item.title}</option>)}</select></label>
+        <label className="min-w-0"><span className="sr-only">Select chapter</span><select value={chapter.id} onChange={(event) => void navigate({ to: "/origin-comic/$chapter", params: { chapter: event.target.value } })} className="h-9 w-full border border-border bg-background px-3 text-sm text-foreground sm:w-auto">{comicChapters.map((item, index) => <option key={item.id} value={item.id}>Chapter {index + 1}: {item.title}</option>)}</select></label>
         <div className="grid grid-cols-[minmax(0,1fr)_auto] gap-2 sm:flex">
           <div className="flex min-w-0"><Button type="button" variant={mode === "single" ? "default" : "outline"} size="sm" onClick={() => setMode("single")}><List />Single</Button><Button type="button" variant={mode === "continuous" ? "default" : "outline"} size="sm" onClick={() => setMode("continuous")}><Rows3 />Scroll</Button></div>
           <div className="flex shrink-0"><Button type="button" variant="outline" size="icon" aria-label="Zoom out" disabled={zoom <= 70} onClick={() => setZoom((value) => value - 10)}><Minus /></Button><span className="grid w-12 place-items-center text-xs text-muted-foreground">{zoom}%</span><Button type="button" variant="outline" size="icon" aria-label="Zoom in" disabled={zoom >= 140} onClick={() => setZoom((value) => value + 10)}><Plus /></Button></div>

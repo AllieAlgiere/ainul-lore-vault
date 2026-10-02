@@ -10,3 +10,4 @@
 <!-- LOVABLE:END -->
 
 - Keep archive content in typed JSON data files and derive routes, relationships, filters, and cross-references from that data so new entries require no component edits.
+- Treat uploaded comic pages as canon sources and derive the reader, chronology links, and lore cross-references from the comic manifest.
