@@ -17,11 +17,14 @@ import { Route as CharactersRouteImport } from './routes/characters'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as FragmentsRouteImport } from './routes/fragments'
 import { Route as FusionsRouteImport } from './routes/fusions'
+import { Route as OriginComicRouteImport } from './routes/origin-comic'
 import { Route as PowerscalingRouteImport } from './routes/powerscaling'
 import { Route as ThronesRouteImport } from './routes/thrones'
 import { Route as TimelineRouteImport } from './routes/timeline'
 import { Route as CharactersIndexRouteImport } from './routes/characters.index'
 import { Route as CharactersIdRouteImport } from './routes/characters.$id'
+import { Route as OriginComicIndexRouteImport } from './routes/origin-comic.index'
+import { Route as OriginComicChapterRouteImport } from './routes/origin-comic.$chapter'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -63,6 +66,11 @@ const FusionsRoute = FusionsRouteImport.update({
   path: '/fusions',
   getParentRoute: () => rootRouteImport,
 } as any)
+const OriginComicRoute = OriginComicRouteImport.update({
+  id: '/origin-comic',
+  path: '/origin-comic',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PowerscalingRoute = PowerscalingRouteImport.update({
   id: '/powerscaling',
   path: '/powerscaling',
@@ -88,6 +96,16 @@ const CharactersIdRoute = CharactersIdRouteImport.update({
   path: '/$id',
   getParentRoute: () => CharactersRoute,
 } as any)
+const OriginComicIndexRoute = OriginComicIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => OriginComicRoute,
+} as any)
+const OriginComicChapterRoute = OriginComicChapterRouteImport.update({
+  id: '/$chapter',
+  path: '/$chapter',
+  getParentRoute: () => OriginComicRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -98,11 +116,14 @@ export interface FileRoutesByFullPath {
   '/faq': typeof FaqRoute
   '/fragments': typeof FragmentsRoute
   '/fusions': typeof FusionsRoute
+  '/origin-comic': typeof OriginComicRouteWithChildren
   '/powerscaling': typeof PowerscalingRoute
   '/thrones': typeof ThronesRoute
   '/timeline': typeof TimelineRoute
   '/characters/$id': typeof CharactersIdRoute
+  '/origin-comic/$chapter': typeof OriginComicChapterRoute
   '/characters/': typeof CharactersIndexRoute
+  '/origin-comic/': typeof OriginComicIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -116,7 +137,9 @@ export interface FileRoutesByTo {
   '/thrones': typeof ThronesRoute
   '/timeline': typeof TimelineRoute
   '/characters/$id': typeof CharactersIdRoute
+  '/origin-comic/$chapter': typeof OriginComicChapterRoute
   '/characters': typeof CharactersIndexRoute
+  '/origin-comic': typeof OriginComicIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -128,11 +151,14 @@ export interface FileRoutesById {
   '/faq': typeof FaqRoute
   '/fragments': typeof FragmentsRoute
   '/fusions': typeof FusionsRoute
+  '/origin-comic': typeof OriginComicRouteWithChildren
   '/powerscaling': typeof PowerscalingRoute
   '/thrones': typeof ThronesRoute
   '/timeline': typeof TimelineRoute
   '/characters/$id': typeof CharactersIdRoute
+  '/origin-comic/$chapter': typeof OriginComicChapterRoute
   '/characters/': typeof CharactersIndexRoute
+  '/origin-comic/': typeof OriginComicIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -145,11 +171,14 @@ export interface FileRouteTypes {
     | '/faq'
     | '/fragments'
     | '/fusions'
+    | '/origin-comic'
     | '/powerscaling'
     | '/thrones'
     | '/timeline'
     | '/characters/$id'
+    | '/origin-comic/$chapter'
     | '/characters/'
+    | '/origin-comic/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -163,7 +192,9 @@ export interface FileRouteTypes {
     | '/thrones'
     | '/timeline'
     | '/characters/$id'
+    | '/origin-comic/$chapter'
     | '/characters'
+    | '/origin-comic'
   id:
     | '__root__'
     | '/'
@@ -174,11 +205,14 @@ export interface FileRouteTypes {
     | '/faq'
     | '/fragments'
     | '/fusions'
+    | '/origin-comic'
     | '/powerscaling'
     | '/thrones'
     | '/timeline'
     | '/characters/$id'
+    | '/origin-comic/$chapter'
     | '/characters/'
+    | '/origin-comic/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -190,6 +224,7 @@ export interface RootRouteChildren {
   FaqRoute: typeof FaqRoute
   FragmentsRoute: typeof FragmentsRoute
   FusionsRoute: typeof FusionsRoute
+  OriginComicRoute: typeof OriginComicRouteWithChildren
   PowerscalingRoute: typeof PowerscalingRoute
   ThronesRoute: typeof ThronesRoute
   TimelineRoute: typeof TimelineRoute
@@ -253,6 +288,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FusionsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/origin-comic': {
+      id: '/origin-comic'
+      path: '/origin-comic'
+      fullPath: '/origin-comic'
+      preLoaderRoute: typeof OriginComicRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/powerscaling': {
       id: '/powerscaling'
       path: '/powerscaling'
@@ -288,6 +330,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CharactersIdRouteImport
       parentRoute: typeof CharactersRoute
     }
+    '/origin-comic/': {
+      id: '/origin-comic/'
+      path: '/'
+      fullPath: '/origin-comic/'
+      preLoaderRoute: typeof OriginComicIndexRouteImport
+      parentRoute: typeof OriginComicRoute
+    }
+    '/origin-comic/$chapter': {
+      id: '/origin-comic/$chapter'
+      path: '/$chapter'
+      fullPath: '/origin-comic/$chapter'
+      preLoaderRoute: typeof OriginComicChapterRouteImport
+      parentRoute: typeof OriginComicRoute
+    }
   }
 }
 
@@ -305,6 +361,20 @@ const CharactersRouteWithChildren = CharactersRoute._addFileChildren(
   CharactersRouteChildren,
 )
 
+interface OriginComicRouteChildren {
+  OriginComicChapterRoute: typeof OriginComicChapterRoute
+  OriginComicIndexRoute: typeof OriginComicIndexRoute
+}
+
+const OriginComicRouteChildren: OriginComicRouteChildren = {
+  OriginComicChapterRoute: OriginComicChapterRoute,
+  OriginComicIndexRoute: OriginComicIndexRoute,
+}
+
+const OriginComicRouteWithChildren = OriginComicRoute._addFileChildren(
+  OriginComicRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AinulRoute: AinulRoute,
@@ -314,6 +384,7 @@ const rootRouteChildren: RootRouteChildren = {
   FaqRoute: FaqRoute,
   FragmentsRoute: FragmentsRoute,
   FusionsRoute: FusionsRoute,
+  OriginComicRoute: OriginComicRouteWithChildren,
   PowerscalingRoute: PowerscalingRoute,
   ThronesRoute: ThronesRoute,
   TimelineRoute: TimelineRoute,
