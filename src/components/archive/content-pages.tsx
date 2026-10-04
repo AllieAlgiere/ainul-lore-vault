@@ -17,7 +17,7 @@ function AinulPortrait() {
   return <figure className="group mb-8 overflow-hidden border border-border bg-muted">
     <div className="relative aspect-[1198/1308]">
       <img src={monochrome} alt="Complete Ainul" width={1198} height={1308} className="absolute inset-0 h-full w-full object-cover" />
-      <img src={color} alt="" aria-hidden="true" width={1198} height={1308} className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100 motion-reduce:transition-none" />
+      <img src={color} alt="" aria-hidden="true" width={1198} height={1308} className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-[5000ms] ease-in-out group-hover:opacity-100 motion-reduce:transition-none" />
     </div>
     <figcaption className="border-t border-border px-3 py-2 text-center text-[10px] uppercase tracking-[0.18em] text-muted-foreground">Complete manifestation</figcaption>
   </figure>;
