@@ -3,13 +3,27 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import ainul from "@/data/ainul.json";
 import beast from "@/data/beast.json";
 import { ama, faq, powerscaling, thrones, timeline, type Character } from "@/lib/archive";
+import { archiveImages } from "@/lib/archive-images";
 import { ArticleSection, Breadcrumbs, CharacterLink, CollectionGrid, PageHeader } from "./archive-ui";
 
 export function CharacterCollectionPage({ eyebrow, title, description, characters }: { eyebrow: string; title: string; description: string; characters: Character[] }) { return <><PageHeader eyebrow={eyebrow} title={title} description={description} /><div className="mx-auto max-w-6xl px-5 py-8 sm:px-8 sm:py-12"><Breadcrumbs items={[{label:title}]} /><CollectionGrid characters={characters} /></div></>; }
 
 export function ThronesPage() { return <><PageHeader eyebrow="The great offices" title="The Seven Thrones" description="Seven seats bind sovereign power to cosmic duty. Four have keepers. Three await the next turning." /><div className="mx-auto max-w-5xl px-5 py-8 sm:px-8 sm:py-12"><Breadcrumbs items={[{label:"Seven Thrones"}]} /><div className="divide-y divide-border border-y border-border">{thrones.map((throne,index) => <article key={throne.id} className="grid gap-4 py-7 sm:grid-cols-[5rem_1fr_auto] sm:items-center"><span className="font-display text-4xl text-primary/50">{throne.ordinal}</span><div><h2 className="font-display text-2xl">{throne.name}</h2><p className="mt-1 text-xs uppercase tracking-widest text-primary">Domain of {throne.domain}</p><p className="mt-3 max-w-xl text-sm leading-6 text-muted-foreground">{throne.description}</p></div><div className="text-sm text-muted-foreground">{throne.keeper ? <>Keeper · <CharacterLink name={throne.keeper} /></> : <span className="italic">Vacant</span>}</div></article>)}</div></div></>; }
 
-export function DoctrinePage({ type }: { type: "ainul" | "beast" }) { const data = type === "ainul" ? ainul : beast; const list = data.list; return <><PageHeader eyebrow={data.aspect} title={data.title} description={data.description} /><div className="mx-auto max-w-4xl px-5 py-8 sm:px-8 sm:py-12"><Breadcrumbs items={[{label:data.title}]} /><blockquote className="border-y border-primary/30 py-7 text-center font-display text-2xl italic text-foreground sm:text-3xl">“{data.subtitle}”</blockquote><div className="mt-10 grid gap-10 md:grid-cols-[1fr_15rem]"><div className="space-y-9">{data.sections.map((section) => <ArticleSection key={section.title} title={section.title}><p>{section.body}</p></ArticleSection>)}</div><aside><p className="archive-eyebrow">Abilities</p><ol className="mt-5 space-y-3">{list.map((item,index) => <li key={item} className="border-l border-border pl-4 text-sm leading-6"><span className="mr-2 text-primary">{String(index+1).padStart(2,"0")}</span>{item}</li>)}</ol>{data.related.length > 0 && <><p className="archive-eyebrow mt-8">Connected</p><div className="mt-4 flex flex-wrap gap-x-3 gap-y-1 text-sm">{data.related.map((name) => <CharacterLink key={name} name={name} />)}</div></>}</aside></div></div></>; }
+function AinulPortrait() {
+  const monochrome = archiveImages["ainul-complete-monochrome.png"];
+  const color = archiveImages["ainul-complete-color.png"];
+  if (!monochrome || !color) return null;
+  return <figure className="group mb-8 overflow-hidden border border-border bg-muted">
+    <div className="relative aspect-[1198/1308]">
+      <img src={monochrome} alt="Complete Ainul" width={1198} height={1308} className="absolute inset-0 h-full w-full object-cover" />
+      <img src={color} alt="" aria-hidden="true" width={1198} height={1308} className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100 motion-reduce:transition-none" />
+    </div>
+    <figcaption className="border-t border-border px-3 py-2 text-center text-[10px] uppercase tracking-[0.18em] text-muted-foreground">Complete manifestation</figcaption>
+  </figure>;
+}
+
+export function DoctrinePage({ type }: { type: "ainul" | "beast" }) { const data = type === "ainul" ? ainul : beast; const list = data.list; return <><PageHeader eyebrow={data.aspect} title={data.title} description={data.description} /><div className="mx-auto max-w-4xl px-5 py-8 sm:px-8 sm:py-12"><Breadcrumbs items={[{label:data.title}]} /><blockquote className="border-y border-primary/30 py-7 text-center font-display text-2xl italic text-foreground sm:text-3xl">“{data.subtitle}”</blockquote><div className="mt-10 grid gap-10 md:grid-cols-[1fr_18rem]"><div className="space-y-9">{data.sections.map((section) => <ArticleSection key={section.title} title={section.title}><p>{section.body}</p></ArticleSection>)}</div><aside>{type === "ainul" && <AinulPortrait />}<p className="archive-eyebrow">Abilities</p><ol className="mt-5 space-y-3">{list.map((item,index) => <li key={item} className="border-l border-border pl-4 text-sm leading-6"><span className="mr-2 text-primary">{String(index+1).padStart(2,"0")}</span>{item}</li>)}</ol>{data.related.length > 0 && <><p className="archive-eyebrow mt-8">Connected</p><div className="mt-4 flex flex-wrap gap-x-3 gap-y-1 text-sm">{data.related.map((name) => <CharacterLink key={name} name={name} />)}</div></>}</aside></div></div></>; }
 
 export { TimelinePage, AmaPage } from "./lore-browsers";
 
