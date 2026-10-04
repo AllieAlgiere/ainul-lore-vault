@@ -56,6 +56,8 @@ export function ComicReader({ chapter }: { chapter: ComicChapter }) {
     touchStart.current = null;
   };
 
+  if (!current) return null;
+
   return <>
     <PageHeader eyebrow={`${chapterLabel} · Canon record`} title={chapter.title} description={chapter.description} />
     <div className="mx-auto max-w-5xl px-4 py-8 sm:px-8 sm:py-12">
