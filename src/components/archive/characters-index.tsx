@@ -11,6 +11,9 @@ export function CharactersIndex({ query, tag, kind = "", tier = "" }: { query: s
   const navigate = useNavigate({ from: "/characters/" });
   const tiers = [...new Set(powerscaling.map((p) => p.tier))];
   const results = filterCharacters(query, tag).filter((c) => (!kind || c.kind === kind) && (!tier || (tier === "Unranked" ? !powerFor(c.name) : powerFor(c.name)?.tier === tier))).sort((a, b) => tier ? (powerFor(a.name)?.rank ?? 99) - (powerFor(b.name)?.rank ?? 99) : 0);
+  const total = filterCharacters("", "").length;
+  const hasFilters = Boolean(query || tag || kind || tier);
+  const clearAll = () => update({ q: "", tag: "", kind: "", tier: "" });
   const sel = "h-10 border border-border bg-background px-3 text-sm text-foreground focus:border-primary";
   const needle = query.trim().toLowerCase();
   const comicResults = !tag && needle ? comicChapters.filter((chapter) => [chapter.title, chapter.description].join(" ").toLowerCase().includes(needle)) : [];
