@@ -161,3 +161,10 @@
 .archive-stars { background-image: radial-gradient(circle at 16% 18%, color-mix(in oklab, var(--primary) 28%, transparent) 0 1px, transparent 2px), radial-gradient(circle at 78% 30%, color-mix(in oklab, var(--foreground) 20%, transparent) 0 1px, transparent 2px); background-size: 91px 91px, 137px 137px; }
 .home-hero::before { content: ""; position: absolute; inset: 8% 5% auto auto; width: min(46vw, 34rem); aspect-ratio: 1; border: 1px solid color-mix(in oklab, var(--primary) 22%, transparent); border-radius: 50%; box-shadow: 0 0 0 3rem color-mix(in oklab, var(--primary) 3%, transparent), 0 0 0 7rem color-mix(in oklab, var(--primary) 2%, transparent); }
 @media (prefers-reduced-motion: no-preference) { .archive-sigil { transition: transform .4s ease; } a:hover .archive-sigil { transform: rotate(135deg); } }
+
+@layer base {
+  a:focus-visible, button:focus-visible, [role="button"]:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible, [tabindex]:not([tabindex="-1"]):focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+}
