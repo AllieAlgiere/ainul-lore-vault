@@ -38,7 +38,7 @@ function SearchBox({ compact = false, onSubmit }: { compact?: boolean; onSubmit?
 function NavLinks({ mobile = false }: { mobile?: boolean }) {
   return (
     <nav aria-label="Archive sections" className={mobile ? "grid gap-1" : "grid gap-0.5"}>
-      <Link to="/characters" search={{ q: "", tag: "" }} activeProps={{ className: "bg-accent text-accent-foreground border-primary/40" }} className="flex min-h-10 items-center gap-3 border-l-2 border-transparent px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-accent/60 hover:text-foreground"><Shield aria-hidden="true" className="size-4" />All Characters</Link>
+      <Link to="/characters" search={{ q: "", tag: "", kind: "", tier: "" }} activeProps={{ className: "bg-accent text-accent-foreground border-primary/40" }} className="flex min-h-10 items-center gap-3 border-l-2 border-transparent px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-accent/60 hover:text-foreground"><Shield aria-hidden="true" className="size-4" />All Characters</Link>
       {nav.map(({ to, label, icon: Icon }) => <Link key={to} to={to} activeProps={{ className: "bg-accent text-accent-foreground border-primary/40" }} className="flex min-h-10 items-center gap-3 border-l-2 border-transparent px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-accent/60 hover:text-foreground"><Icon aria-hidden="true" className="size-4" />{label}</Link>)}
     </nav>
   );
