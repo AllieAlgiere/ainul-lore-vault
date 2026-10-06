@@ -23,7 +23,7 @@ function RelatedLore({ chapter }: { chapter: ComicChapter }) {
 function LoreLink({ name }: { name: string }) {
   const labels = { Ainul: "/ainul", Beast: "/beast", Fragments: "/fragments", Fusions: "/fusions", "Seven Thrones": "/thrones", Timeline: "/timeline", FAQ: "/faq", "AMA Archive": "/ama" } as const;
   if (name in labels) return <Button asChild variant="outline" size="sm"><a href={labels[name as keyof typeof labels]}>{name}</a></Button>;
-  return <Button asChild variant="outline" size="sm"><Link to="/characters/$id" params={{ id: name.toLowerCase() }} search={{ q: "", tag: "" }}>{name}</Link></Button>;
+  return <Button asChild variant="outline" size="sm"><Link to="/characters/$id" params={{ id: name.toLowerCase() }} search={{ q: "", tag: "", kind: "", tier: "" }}>{name}</Link></Button>;
 }
 
 export function ComicReader({ chapter }: { chapter: ComicChapter }) {

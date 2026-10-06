@@ -19,6 +19,7 @@ import { Route as FragmentsRouteImport } from './routes/fragments'
 import { Route as FusionsRouteImport } from './routes/fusions'
 import { Route as OriginComicRouteImport } from './routes/origin-comic'
 import { Route as PowerscalingRouteImport } from './routes/powerscaling'
+import { Route as SearchRouteImport } from './routes/search'
 import { Route as ThronesRouteImport } from './routes/thrones'
 import { Route as TimelineRouteImport } from './routes/timeline'
 import { Route as CharactersIndexRouteImport } from './routes/characters.index'
@@ -76,6 +77,11 @@ const PowerscalingRoute = PowerscalingRouteImport.update({
   path: '/powerscaling',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SearchRoute = SearchRouteImport.update({
+  id: '/search',
+  path: '/search',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ThronesRoute = ThronesRouteImport.update({
   id: '/thrones',
   path: '/thrones',
@@ -118,6 +124,7 @@ export interface FileRoutesByFullPath {
   '/fusions': typeof FusionsRoute
   '/origin-comic': typeof OriginComicRouteWithChildren
   '/powerscaling': typeof PowerscalingRoute
+  '/search': typeof SearchRoute
   '/thrones': typeof ThronesRoute
   '/timeline': typeof TimelineRoute
   '/characters/$id': typeof CharactersIdRoute
@@ -134,6 +141,7 @@ export interface FileRoutesByTo {
   '/fragments': typeof FragmentsRoute
   '/fusions': typeof FusionsRoute
   '/powerscaling': typeof PowerscalingRoute
+  '/search': typeof SearchRoute
   '/thrones': typeof ThronesRoute
   '/timeline': typeof TimelineRoute
   '/characters/$id': typeof CharactersIdRoute
@@ -153,6 +161,7 @@ export interface FileRoutesById {
   '/fusions': typeof FusionsRoute
   '/origin-comic': typeof OriginComicRouteWithChildren
   '/powerscaling': typeof PowerscalingRoute
+  '/search': typeof SearchRoute
   '/thrones': typeof ThronesRoute
   '/timeline': typeof TimelineRoute
   '/characters/$id': typeof CharactersIdRoute
@@ -173,6 +182,7 @@ export interface FileRouteTypes {
     | '/fusions'
     | '/origin-comic'
     | '/powerscaling'
+    | '/search'
     | '/thrones'
     | '/timeline'
     | '/characters/$id'
@@ -189,6 +199,7 @@ export interface FileRouteTypes {
     | '/fragments'
     | '/fusions'
     | '/powerscaling'
+    | '/search'
     | '/thrones'
     | '/timeline'
     | '/characters/$id'
@@ -207,6 +218,7 @@ export interface FileRouteTypes {
     | '/fusions'
     | '/origin-comic'
     | '/powerscaling'
+    | '/search'
     | '/thrones'
     | '/timeline'
     | '/characters/$id'
@@ -226,6 +238,7 @@ export interface RootRouteChildren {
   FusionsRoute: typeof FusionsRoute
   OriginComicRoute: typeof OriginComicRouteWithChildren
   PowerscalingRoute: typeof PowerscalingRoute
+  SearchRoute: typeof SearchRoute
   ThronesRoute: typeof ThronesRoute
   TimelineRoute: typeof TimelineRoute
 }
@@ -300,6 +313,13 @@ declare module '@tanstack/react-router' {
       path: '/powerscaling'
       fullPath: '/powerscaling'
       preLoaderRoute: typeof PowerscalingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/search': {
+      id: '/search'
+      path: '/search'
+      fullPath: '/search'
+      preLoaderRoute: typeof SearchRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/thrones': {
@@ -386,6 +406,7 @@ const rootRouteChildren: RootRouteChildren = {
   FusionsRoute: FusionsRoute,
   OriginComicRoute: OriginComicRouteWithChildren,
   PowerscalingRoute: PowerscalingRoute,
+  SearchRoute: SearchRoute,
   ThronesRoute: ThronesRoute,
   TimelineRoute: TimelineRoute,
 }
