@@ -1,5 +1,6 @@
 import ainul from "@/data/ainul.json";
 import beast from "@/data/beast.json";
+import glitchHell from "@/data/glitch-hell.json";
 import { ama, characters, faq, thrones, timeline } from "@/lib/archive";
 import { comicChapters } from "@/lib/origin-comic";
 
@@ -17,7 +18,7 @@ export const searchIndex: SearchResult[] = [
   ...faq.map((e) => ({ id: `q-${e.id}`, type: "FAQ", title: e.question, snippet: e.answer, href: "/faq", text: lower([e.question, e.answer]) })),
   ...thrones.map((t) => ({ id: `th-${t.id}`, type: "Throne", title: t.name, snippet: t.description, href: "/thrones", text: lower([t.name, t.domain, t.description, t.keeper ?? ""]) })),
   ...comicChapters.map((ch) => ({ id: `oc-${ch.id}`, type: "Origin Comic", title: ch.title, snippet: ch.description, href: `/origin-comic/${ch.id}`, text: lower([ch.title, ch.description]) })),
-  ...[{ d: ainul, href: "/ainul" }, { d: beast, href: "/beast" }].flatMap(({ d, href }) => [
+  ...[{ d: ainul, href: "/ainul" }, { d: beast, href: "/beast" }, { d: glitchHell, href: "/glitch-hell" }].flatMap(({ d, href }) => [
     { id: `d-${href}`, type: "Lore", title: d.title, snippet: d.description, href, text: lower([d.title, d.description, d.subtitle, ...d.list]) },
     ...d.sections.map((s) => ({ id: `d-${href}-${s.title}`, type: "Lore", title: `${d.title}: ${s.title}`, snippet: s.body, href, text: lower([s.title, s.body]) })),
   ]),

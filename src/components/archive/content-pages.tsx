@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import ainul from "@/data/ainul.json";
 import beast from "@/data/beast.json";
+import glitchHell from "@/data/glitch-hell.json";
 import { ama, faq, powerscaling, thrones, timeline, type Character } from "@/lib/archive";
 import { archiveImages } from "@/lib/archive-images";
 import { ArticleSection, Breadcrumbs, CharacterLink, CollectionGrid, PageHeader } from "./archive-ui";
@@ -23,7 +24,18 @@ function AinulPortrait() {
   </figure>;
 }
 
-export function DoctrinePage({ type }: { type: "ainul" | "beast" }) { const data = type === "ainul" ? ainul : beast; const list = data.list; return <><PageHeader eyebrow={data.aspect} title={data.title} description={data.description} /><div className="mx-auto max-w-4xl px-5 py-8 sm:px-8 sm:py-12"><Breadcrumbs items={[{label:data.title}]} /><blockquote className="border-y border-primary/30 py-7 text-center font-display text-2xl italic text-foreground sm:text-3xl">“{data.subtitle}”</blockquote><div className="mt-10 grid gap-10 md:grid-cols-[1fr_18rem]"><div className="space-y-9">{data.sections.map((section) => <ArticleSection key={section.title} title={section.title}><p>{section.body}</p></ArticleSection>)}</div><aside>{type === "ainul" && <AinulPortrait />}<p className="archive-eyebrow">Abilities</p><ol className="mt-5 space-y-3">{list.map((item,index) => <li key={item} className="border-l border-border pl-4 text-sm leading-6"><span className="mr-2 text-primary">{String(index+1).padStart(2,"0")}</span>{item}</li>)}</ol>{data.related.length > 0 && <><p className="archive-eyebrow mt-8">Connected</p><div className="mt-4 flex flex-wrap gap-x-3 gap-y-1 text-sm">{data.related.map((name) => <CharacterLink key={name} name={name} />)}</div></>}</aside></div></div></>; }
+function GlitchHellDiagram() {
+  const diagram = archiveImages["glitch-hell-cosmology.png"];
+  if (!diagram) return null;
+  return <figure className="mb-8 overflow-hidden border border-border bg-muted">
+    <img src={diagram} alt="Diagram of the planes of existence: the unknowable Divine, Non-existence, the barrier of Impossibility bleeding into the infinite dimensions of reality" width={1172} height={1203} className="h-auto w-full" />
+    <figcaption className="border-t border-border px-3 py-2 text-center text-[10px] uppercase tracking-[0.18em] text-muted-foreground">The planes of existence</figcaption>
+  </figure>;
+}
+
+const doctrineData = { ainul, beast, "glitch-hell": glitchHell } as const;
+
+export function DoctrinePage({ type }: { type: keyof typeof doctrineData }) { const data = doctrineData[type]; const list = data.list; return <><PageHeader eyebrow={data.aspect} title={data.title} description={data.description} /><div className="mx-auto max-w-4xl px-5 py-8 sm:px-8 sm:py-12"><Breadcrumbs items={[{label:data.title}]} /><blockquote className="border-y border-primary/30 py-7 text-center font-display text-2xl italic text-foreground sm:text-3xl">“{data.subtitle}”</blockquote><div className="mt-10 grid gap-10 md:grid-cols-[1fr_18rem]"><div className="space-y-9">{data.sections.map((section) => <ArticleSection key={section.title} title={section.title}><p>{section.body}</p></ArticleSection>)}</div><aside>{type === "ainul" && <AinulPortrait />}{type === "glitch-hell" && <GlitchHellDiagram />}<p className="archive-eyebrow">{type === "glitch-hell" ? "Key concepts" : "Abilities"}</p><ol className="mt-5 space-y-3">{list.map((item,index) => <li key={item} className="border-l border-border pl-4 text-sm leading-6"><span className="mr-2 text-primary">{String(index+1).padStart(2,"0")}</span>{item}</li>)}</ol>{data.related.length > 0 && <><p className="archive-eyebrow mt-8">Connected</p><div className="mt-4 flex flex-wrap gap-x-3 gap-y-1 text-sm">{data.related.map((name) => <CharacterLink key={name} name={name} />)}</div></>}</aside></div></div></>; }
 
 export { TimelinePage, AmaPage } from "./lore-browsers";
 
