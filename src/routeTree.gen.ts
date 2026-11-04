@@ -17,6 +17,7 @@ import { Route as CharactersRouteImport } from './routes/characters'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as FragmentsRouteImport } from './routes/fragments'
 import { Route as FusionsRouteImport } from './routes/fusions'
+import { Route as GlitchHellRouteImport } from './routes/glitch-hell'
 import { Route as OriginComicRouteImport } from './routes/origin-comic'
 import { Route as PowerscalingRouteImport } from './routes/powerscaling'
 import { Route as SearchRouteImport } from './routes/search'
@@ -65,6 +66,11 @@ const FragmentsRoute = FragmentsRouteImport.update({
 const FusionsRoute = FusionsRouteImport.update({
   id: '/fusions',
   path: '/fusions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GlitchHellRoute = GlitchHellRouteImport.update({
+  id: '/glitch-hell',
+  path: '/glitch-hell',
   getParentRoute: () => rootRouteImport,
 } as any)
 const OriginComicRoute = OriginComicRouteImport.update({
@@ -122,6 +128,7 @@ export interface FileRoutesByFullPath {
   '/faq': typeof FaqRoute
   '/fragments': typeof FragmentsRoute
   '/fusions': typeof FusionsRoute
+  '/glitch-hell': typeof GlitchHellRoute
   '/origin-comic': typeof OriginComicRouteWithChildren
   '/powerscaling': typeof PowerscalingRoute
   '/search': typeof SearchRoute
@@ -140,6 +147,7 @@ export interface FileRoutesByTo {
   '/faq': typeof FaqRoute
   '/fragments': typeof FragmentsRoute
   '/fusions': typeof FusionsRoute
+  '/glitch-hell': typeof GlitchHellRoute
   '/powerscaling': typeof PowerscalingRoute
   '/search': typeof SearchRoute
   '/thrones': typeof ThronesRoute
@@ -159,6 +167,7 @@ export interface FileRoutesById {
   '/faq': typeof FaqRoute
   '/fragments': typeof FragmentsRoute
   '/fusions': typeof FusionsRoute
+  '/glitch-hell': typeof GlitchHellRoute
   '/origin-comic': typeof OriginComicRouteWithChildren
   '/powerscaling': typeof PowerscalingRoute
   '/search': typeof SearchRoute
@@ -180,6 +189,7 @@ export interface FileRouteTypes {
     | '/faq'
     | '/fragments'
     | '/fusions'
+    | '/glitch-hell'
     | '/origin-comic'
     | '/powerscaling'
     | '/search'
@@ -198,6 +208,7 @@ export interface FileRouteTypes {
     | '/faq'
     | '/fragments'
     | '/fusions'
+    | '/glitch-hell'
     | '/powerscaling'
     | '/search'
     | '/thrones'
@@ -216,6 +227,7 @@ export interface FileRouteTypes {
     | '/faq'
     | '/fragments'
     | '/fusions'
+    | '/glitch-hell'
     | '/origin-comic'
     | '/powerscaling'
     | '/search'
@@ -236,6 +248,7 @@ export interface RootRouteChildren {
   FaqRoute: typeof FaqRoute
   FragmentsRoute: typeof FragmentsRoute
   FusionsRoute: typeof FusionsRoute
+  GlitchHellRoute: typeof GlitchHellRoute
   OriginComicRoute: typeof OriginComicRouteWithChildren
   PowerscalingRoute: typeof PowerscalingRoute
   SearchRoute: typeof SearchRoute
@@ -299,6 +312,13 @@ declare module '@tanstack/react-router' {
       path: '/fusions'
       fullPath: '/fusions'
       preLoaderRoute: typeof FusionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/glitch-hell': {
+      id: '/glitch-hell'
+      path: '/glitch-hell'
+      fullPath: '/glitch-hell'
+      preLoaderRoute: typeof GlitchHellRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/origin-comic': {
@@ -404,6 +424,7 @@ const rootRouteChildren: RootRouteChildren = {
   FaqRoute: FaqRoute,
   FragmentsRoute: FragmentsRoute,
   FusionsRoute: FusionsRoute,
+  GlitchHellRoute: GlitchHellRoute,
   OriginComicRoute: OriginComicRouteWithChildren,
   PowerscalingRoute: PowerscalingRoute,
   SearchRoute: SearchRoute,
