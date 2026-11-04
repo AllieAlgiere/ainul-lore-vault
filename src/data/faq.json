@@ -40,5 +40,14 @@
     "answer": "Yes. Fusions can fuse with other Fragments or other Fusions. The result is always the same final combination regardless of fusion order.",
     "date": "2024-05-28",
     "characters": []
+  },
+  {
+    "id": "faq-06",
+    "question": "If Ainul is torn apart, how can his being still ward and contain Impossibility?",
+    "answer": "Well, wouldn't that just be... impossible?",
+    "date": "2026-11-04",
+    "characters": [
+      "Ainul"
+    ]
   }
 ]

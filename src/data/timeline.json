@@ -510,7 +510,7 @@
     "era": "Glitch Hell",
     "year": "Unknown",
     "title": "Ainul Breaks Apart",
-    "description": "Unable to carry the unbearable burden alone, Ainul divides his emotions, memories, power and facets among ten essential pieces.",
+    "description": "The burden proves too heavy to carry at once. In a burst of indescribable proportions, Ainul tears apart in his new physical form, parts of his very being strewn far and wide across dimensions.",
     "characters": [
       "Ainul"
     ],
@@ -519,6 +519,50 @@
   },
   {
     "id": "tl-048",
+    "era": "New Purpose",
+    "year": "Unknown",
+    "title": "Thirteen Becomes Twelve",
+    "description": "The biggest parts of Ainul, thirteen in number, become the twelve Fragments of Ainul.",
+    "characters": [
+      "White",
+      "Black",
+      "Red",
+      "Blue",
+      "Green",
+      "Yellow",
+      "Cyan",
+      "Magenta",
+      "Umbra",
+      "Taffy",
+      "Lavender",
+      "Cider"
+    ],
+    "category": "Fragment Lore"
+  },
+  {
+    "id": "tl-049",
+    "era": "New Purpose",
+    "year": "Unknown",
+    "title": "Terrorbytes and Horrorbytes",
+    "description": "Countless tiny bits and pieces of Ainul manifest in their own way, becoming the Terrorbytes and their larger siblings, the Horrorbytes.",
+    "characters": [
+      "Ainul"
+    ],
+    "category": "Ainul"
+  },
+  {
+    "id": "tl-050",
+    "era": "New Purpose",
+    "year": "Unknown",
+    "title": "Glitch Hell Named",
+    "description": "The endless prison-complex for anomalies and impossible entities is named after the suffering Ainul experienced when he tore apart at the very seams of his existence, and the Terrorbytes and Horrorbytes go on to serve as its wardens.",
+    "characters": [
+      "Ainul"
+    ],
+    "category": "Ainul"
+  },
+  {
+    "id": "tl-051",
     "era": "New Purpose",
     "year": "Unknown",
     "title": "Ten Fragments Take Form",
@@ -539,7 +583,7 @@
     "comicChapter": "chapter-2"
   },
   {
-    "id": "tl-049",
+    "id": "tl-052",
     "era": "Shared Life",
     "year": "Unknown",
     "title": "The Fragments Build a Shared Life",

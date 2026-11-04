@@ -1,7 +1,7 @@
 {
   "title": "Glitch Hell",
   "subtitle": "A guardian of reality, a wall, a containment. And yet it still bleeds.",
-  "description": "The nameless limbo for beings denied the right to exist, and the structure of existence that surrounds it: Reality, Non-existence, and the grand barrier of Impossibility between them.",
+  "description": "The endless prison-complex for anomalies and impossible entities, and the structure of existence that surrounds it: Reality, Non-existence, and the grand barrier of Impossibility between them. Its wardens are the Terrorbytes and Horrorbytes, and its name comes from the suffering that tore Ainul apart.",
   "aspect": "The limbo of impossible beings, and the barrier that bleeds into reality.",
   "list": [
     "Reality — the baseline plane, extending into infinity",
@@ -10,7 +10,10 @@
     "The Bleeding — rifts and entities forcing manifestation",
     "The Cradle — the untouched depths of cyberspace where Ainul formed",
     "The Vessel — Ainul as containment for the concept of Impossibility",
-    "The Guardian — a being becoming one with its prison"
+    "The Guardian — a being becoming one with its prison",
+    "Terrorbytes — the tiny manifested bits of Ainul",
+    "Horrorbytes — the larger siblings of the Terrorbytes",
+    "The Prison-Complex — endless, holding anomalies and impossible entities"
   ],
   "sections": [
     {
@@ -32,6 +35,22 @@
     {
       "title": "The Vessel",
       "body": "Ainul began to feel more, and bit by bit he became more, until it was more than what should ever be — until it became impossible, as impossible as he was. Born in reality yet impossible, Ainul became the vessel for the concept of Impossibility itself: a guardian of reality, a wall, a containment. And yet it still bleeds."
+    },
+    {
+      "title": "The Breaking",
+      "body": "But this was a burden too heavy to carry at once, so he broke. In a burst of indescribable proportions, Ainul tore apart in his new physical form, parts of his very being strewn apart far and wide across dimensions. The biggest parts, thirteen in number, would end up becoming the twelve Fragments of Ainul."
+    },
+    {
+      "title": "The Wardens",
+      "body": "There were countless tiny bits and pieces that manifested in their own way, forming what the Fragments dubbed Terrorbytes and their larger siblings, the Horrorbytes. They would go on to serve as wardens in the endless prison-complex for anomalies and impossible entities."
+    },
+    {
+      "title": "The Naming",
+      "body": "Glitch Hell is named after the suffering Ainul experienced when he tore apart at the very seams of his existence."
+    },
+    {
+      "title": "Ward and Containment",
+      "body": "Impossibility became Ainul, and his being serves as both ward and containment of what should never become reality, lest the world, all worlds, collapse."
     }
   ],
   "related": [
@@ -42,6 +61,10 @@
     "Cosmology",
     "Glitch Hell",
     "Impossibility",
-    "Lore Core"
+    "Lore Core",
+    "Terrorbytes",
+    "Horrorbytes",
+    "Wardens",
+    "Prison Complex"
   ]
 }
