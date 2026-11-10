@@ -7,4 +7,6 @@
 - [x] Complete desktop and mobile end-to-end verification
 - [x] Add JSON-driven Origin Comic reader with chapter navigation and reading modes
 - [x] Integrate comic canon into the timeline with source links
-- [ ] Verify comic reading and timeline flows on desktop and mobile
+- [x] Verify comic reading and timeline flows on desktop and mobile
+- [ ] Integrate the new Glitch Hell blocks, anomaly classes, entities, and uploaded artwork
+- [ ] Verify the expanded Glitch Hell archive and search on desktop and mobile
