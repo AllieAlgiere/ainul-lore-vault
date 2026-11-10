@@ -5,9 +5,9 @@ export const Route = createFileRoute("/glitch-hell")({
   head: () => ({
     meta: [
       { title: "Glitch Hell | Ainul Archive" },
-      { name: "description", content: "The limbo of impossible beings, and the barrier of Impossibility that bleeds into reality." },
+      { name: "description", content: "Explore Glitch Hell's endless Blocks, anomaly classes, Fake People, and Terrorbyte and Horrorbyte wardens." },
       { property: "og:title", content: "Glitch Hell | Ainul Archive" },
-      { property: "og:description", content: "The limbo of impossible beings, and the barrier of Impossibility that bleeds into reality." },
+      { property: "og:description", content: "Explore Glitch Hell's endless Blocks, anomaly classes, Fake People, and Terrorbyte and Horrorbyte wardens." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
