@@ -1,7 +1,7 @@
 {
   "title": "Glitch Hell",
   "subtitle": "A guardian of reality, a wall, a containment. And yet it still bleeds.",
-  "description": "The endless prison-complex for anomalies and impossible entities, and the structure of existence that surrounds it: Reality, Non-existence, and the grand barrier of Impossibility between them. Its wardens are the Terrorbytes and Horrorbytes, and its name comes from the suffering that tore Ainul apart.",
+  "description": "The functionally endless prison-complex for anomalies and impossible entities. Its endless levels are called Blocks, its inmates are classified by letters, and its Terrorbyte and Horrorbyte wardens watch over entities that must never manifest in reality.",
   "aspect": "The limbo of impossible beings, and the barrier that bleeds into reality.",
   "list": [
     "Reality — the baseline plane, extending into infinity",
@@ -13,7 +13,13 @@
     "The Guardian — a being becoming one with its prison",
     "Terrorbytes — the tiny manifested bits of Ainul",
     "Horrorbytes — the larger siblings of the Terrorbytes",
-    "The Prison-Complex — endless, holding anomalies and impossible entities"
+    "The Prison-Complex — endless, holding anomalies and impossible entities",
+    "Blocks — the functionally endless levels of Glitch Hell",
+    "Containment Classes — letter rankings from E to [REDACTED]",
+    "Fake People — skin-made mimics that replace and consume humans",
+    "Watchtowers — the warden posts at the center of every Block",
+    "Cafeterias — self-operated by Terrorbytes who want, but do not need, food",
+    "Prison Offices — usually operated by larger, more capable Horrorbytes"
   ],
   "sections": [
     {
@@ -49,8 +55,72 @@
       "body": "Glitch Hell is named after the suffering Ainul experienced when he tore apart at the very seams of his existence."
     },
     {
+      "title": "The Blocks",
+      "body": "Glitch Hell is a functionally endless liminal space, not unlike the famous Backrooms, divided into levels that are each endless as well. These levels are called Blocks. Block A-23 houses A-class inmates and is the twenty-third of infinite A-class Blocks. Block C-23 looks very similar, though its anomalies are far less dangerous. Block C-24 is outside—for whatever that term is worth in a place with no real sky. Block E-62-80-4 is the lowest Block, containing the lowest common denominators among impossibilities."
+    },
+    {
+      "title": "Containment Classes",
+      "body": "Anomalies are contained and categorized in a letter system running from E, the least dangerous, to [REDACTED]. Even E-class anomalies must never leave and manifest in reality: their mere existence would cause massive problems and endanger the concept of order."
+    },
+    {
+      "title": "The Fake People",
+      "body": "Among the lowest common denominators in Block E-62-80-4 are the Fake People. These beings are entirely made of human skin throughout. Entirely uncanny, they seek to replace humans and consume them to create more Fake People that repeat the cycle. They speak politely even during violent attacks, as though offering a hotel room key. They come in all shapes and sizes, but never quite humanly correct. Their claw-like fingers are actually soft, prehensile tentacles used to wrap around the limbs of prey. There is no conscience in them; the Fake People are neither sentient nor thinking, following their behavior like a programming of unknown origin."
+    },
+    {
+      "title": "Watchtowers and Cafeterias",
+      "body": "Every Block is centered by a watchtower, always inhabited by a couple of Terrorbytes and Horrorbytes. Glitch Hell also has cafeterias, self-operated by the Terrorbytes—not because they need food, but because they simply want it. They cannot actually starve."
+    },
+    {
+      "title": "Prison Offices",
+      "body": "Like any functional prison, Glitch Hell has huge offices, usually operated by the larger and more capable Horrorbytes."
+    },
+    {
       "title": "Ward and Containment",
       "body": "Impossibility became Ainul, and his being serves as both ward and containment of what should never become reality, lest the world, all worlds, collapse."
+    }
+  ],
+  "gallery": [
+    {
+      "title": "Block A-23",
+      "image": "block-a-23.png",
+      "caption": "The twenty-third A-class Block out of infinite, housing inmates of the A-class.",
+      "alt": "The vast, multi-storey interior of Block A-23, with illuminated cells and a central watchtower"
+    },
+    {
+      "title": "Block C-23",
+      "image": "block-c-23.png",
+      "caption": "Similar in structure to Block A-23, but containing far less dangerous C-class anomalies.",
+      "alt": "Rows of glowing cells and a central watchtower inside Block C-23"
+    },
+    {
+      "title": "Block C-24",
+      "image": "block-c-24.png",
+      "caption": "An outdoor Block—for whatever that term is worth where no real sky exists.",
+      "alt": "The open-air prison courtyard of Block C-24 beneath a dark, artificial sky"
+    },
+    {
+      "title": "Block E-62-80-4",
+      "image": "block-e-62-80-4.webp",
+      "caption": "The lowest Block, containing the lowest common denominators among impossibilities, including the Fake People.",
+      "alt": "The corrupted, neon-lit interior of Block E-62-80-4"
+    },
+    {
+      "title": "Fake People",
+      "image": "fake-people.webp",
+      "caption": "Skin-made mimics that replace and consume humans, never quite humanly correct.",
+      "alt": "A glitching Fake Person with claw-like tentacle fingers inside a prison cell"
+    },
+    {
+      "title": "Warden Watchtower",
+      "image": "warden-watchtower.webp",
+      "caption": "Terrorbytes and Horrorbytes staff every Block's central watchtower; Terrorbytes eat because they want to, not because they must.",
+      "alt": "Terrorbyte and Horrorbyte wardens inside a watchtower, one holding a hamburger"
+    },
+    {
+      "title": "Prison Offices",
+      "image": "prison-offices.webp",
+      "caption": "Huge offices keep the prison functioning, usually operated by larger and more capable Horrorbytes.",
+      "alt": "Two Horrorbyte wardens working in a glitching prison management office"
     }
   ],
   "related": [
@@ -65,6 +135,9 @@
     "Terrorbytes",
     "Horrorbytes",
     "Wardens",
-    "Prison Complex"
+    "Prison Complex",
+    "Blocks",
+    "Containment Classes",
+    "Fake People"
   ]
 }

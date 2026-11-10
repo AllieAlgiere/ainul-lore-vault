@@ -22,6 +22,7 @@ export const searchIndex: SearchResult[] = [
     { id: `d-${href}`, type: "Lore", title: d.title, snippet: d.description, href, text: lower([d.title, d.description, d.subtitle, ...d.list]) },
     ...d.sections.map((s) => ({ id: `d-${href}-${s.title}`, type: "Lore", title: `${d.title}: ${s.title}`, snippet: s.body, href, text: lower([s.title, s.body]) })),
   ]),
+  ...glitchHell.gallery.map((item) => ({ id: `gh-${item.title}`, type: "Field record", title: `Glitch Hell: ${item.title}`, snippet: item.caption, href: "/glitch-hell", text: lower([item.title, item.caption, item.alt]) })),
 ];
 
 export const searchTypes = [...new Set(searchIndex.map((r) => r.type))];

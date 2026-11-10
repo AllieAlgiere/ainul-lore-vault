@@ -33,9 +33,52 @@ function GlitchHellDiagram() {
   </figure>;
 }
 
+function GlitchHellGallery() {
+  return <section aria-labelledby="field-records-title" className="mt-14 border-t border-border pt-10">
+    <p className="archive-eyebrow">Visual archive</p>
+    <h2 id="field-records-title" className="mt-2 font-display text-3xl">Blocks and field records</h2>
+    <p className="mt-3 max-w-2xl text-sm leading-6 text-muted-foreground">Documented containment Blocks, entities, and warden facilities within Glitch Hell.</p>
+    <div className="mt-7 grid gap-6 sm:grid-cols-2">
+      {glitchHell.gallery.map((item) => {
+        const image = archiveImages[item.image];
+        if (!image) return null;
+        return <figure key={item.title} className="overflow-hidden border border-border bg-card">
+          <div className="aspect-[3/2] overflow-hidden bg-muted">
+            <img src={image} alt={item.alt} loading="lazy" decoding="async" className="h-full w-full object-cover" />
+          </div>
+          <figcaption className="border-t border-border p-4">
+            <h3 className="font-display text-xl">{item.title}</h3>
+            <p className="mt-2 text-sm leading-6 text-muted-foreground">{item.caption}</p>
+          </figcaption>
+        </figure>;
+      })}
+    </div>
+  </section>;
+}
+
 const doctrineData = { ainul, beast, "glitch-hell": glitchHell } as const;
 
-export function DoctrinePage({ type }: { type: keyof typeof doctrineData }) { const data = doctrineData[type]; const list = data.list; return <><PageHeader eyebrow={data.aspect} title={data.title} description={data.description} /><div className="mx-auto max-w-4xl px-5 py-8 sm:px-8 sm:py-12"><Breadcrumbs items={[{label:data.title}]} /><blockquote className="border-y border-primary/30 py-7 text-center font-display text-2xl italic text-foreground sm:text-3xl">“{data.subtitle}”</blockquote><div className="mt-10 grid gap-10 md:grid-cols-[1fr_18rem]"><div className="space-y-9">{data.sections.map((section) => <ArticleSection key={section.title} title={section.title}><p>{section.body}</p></ArticleSection>)}</div><aside>{type === "ainul" && <AinulPortrait />}{type === "glitch-hell" && <GlitchHellDiagram />}<p className="archive-eyebrow">{type === "glitch-hell" ? "Key concepts" : "Abilities"}</p><ol className="mt-5 space-y-3">{list.map((item,index) => <li key={item} className="border-l border-border pl-4 text-sm leading-6"><span className="mr-2 text-primary">{String(index+1).padStart(2,"0")}</span>{item}</li>)}</ol>{data.related.length > 0 && <><p className="archive-eyebrow mt-8">Connected</p><div className="mt-4 flex flex-wrap gap-x-3 gap-y-1 text-sm">{data.related.map((name) => <CharacterLink key={name} name={name} />)}</div></>}</aside></div></div></>; }
+export function DoctrinePage({ type }: { type: keyof typeof doctrineData }) {
+  const data = doctrineData[type];
+  return <>
+    <PageHeader eyebrow={data.aspect} title={data.title} description={data.description} />
+    <div className="mx-auto max-w-4xl px-5 py-8 sm:px-8 sm:py-12">
+      <Breadcrumbs items={[{ label: data.title }]} />
+      <blockquote className="border-y border-primary/30 py-7 text-center font-display text-2xl italic text-foreground sm:text-3xl">“{data.subtitle}”</blockquote>
+      <div className="mt-10 grid gap-10 md:grid-cols-[1fr_18rem]">
+        <div className="space-y-9">{data.sections.map((section) => <ArticleSection key={section.title} title={section.title}><p>{section.body}</p></ArticleSection>)}</div>
+        <aside>
+          {type === "ainul" && <AinulPortrait />}
+          {type === "glitch-hell" && <GlitchHellDiagram />}
+          <p className="archive-eyebrow">{type === "glitch-hell" ? "Key concepts" : "Abilities"}</p>
+          <ol className="mt-5 space-y-3">{data.list.map((item, index) => <li key={item} className="border-l border-border pl-4 text-sm leading-6"><span className="mr-2 text-primary">{String(index + 1).padStart(2, "0")}</span>{item}</li>)}</ol>
+          {data.related.length > 0 && <><p className="archive-eyebrow mt-8">Connected</p><div className="mt-4 flex flex-wrap gap-x-3 gap-y-1 text-sm">{data.related.map((name) => <CharacterLink key={name} name={name} />)}</div></>}
+        </aside>
+      </div>
+      {type === "glitch-hell" && <GlitchHellGallery />}
+    </div>
+  </>;
+}
 
 export { TimelinePage, AmaPage } from "./lore-browsers";
 
